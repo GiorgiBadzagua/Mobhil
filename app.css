@@ -1,0 +1,2619 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+body {
+  background-color: rgba(244, 245, 249, 0.5137254902);
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1642px !important;
+  max-width: 100%;
+  margin: auto;
+}
+
+.my-color {
+  background-color: #fff;
+}
+
+.web-title i {
+  font-size: 35px;
+  padding-right: 5px;
+  color: #0640e0;
+}
+.web-title span {
+  font-size: 35px;
+  font-family: "Poppins", sans-serif;
+  color: #292728;
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 144px;
+  position: relative;
+  box-shadow: 0 5px 5px #f4f5f9;
+}
+
+.underline {
+  position: absolute;
+  width: 65px;
+  height: 6px;
+  background-color: #0640e0;
+  display: block;
+  top: 138px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.nav-item a {
+  display: block;
+  font-size: 16px;
+  color: #454545;
+  position: relative;
+  padding-right: 20px !important;
+}
+
+.phone-number {
+  background-color: #f3f4f8;
+}
+.phone-number i {
+  padding: 19px 19px 18px 23px;
+  color: #0c3fd8;
+}
+.phone-number span {
+  padding-left: 15px;
+}
+
+.lagndropdown {
+  width: 99px;
+  position: relative;
+  margin: 25px;
+}
+.lagndropdown .select {
+  color: #333534;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px #ebeaf8 solid;
+  padding: 15px 1px 16px 25px;
+  cursor: pointer;
+  transition: background 0.3s;
+  border-radius: 5px;
+}
+.lagndropdown .caret {
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #0640e0;
+  transition: 0.3s;
+  margin-right: 18px;
+}
+.lagndropdown .langs {
+  list-style: none;
+  padding: 3px 3px;
+  background-color: rgba(228, 220, 220, 0.103);
+  color: #333534;
+  position: absolute;
+  top: 3em;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  opacity: 0;
+  display: none;
+  transition: 0.2s;
+  z-index: 1;
+}
+.lagndropdown .langs li {
+  padding: 4px 4px;
+  margin: 3px 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.lagndropdown .active {
+  background-color: rgba(6, 64, 224, 0.2549019608);
+}
+.lagndropdown .langs-open {
+  display: block;
+  opacity: 1;
+}
+
+.search .right {
+  padding-right: 0 !important;
+}
+.search .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.search .trending {
+  width: 760px !important;
+  width: 100%;
+  padding-top: 127px;
+  position: relative;
+}
+.search .sub-title {
+  background-color: #f2f3f7;
+  width: 377px;
+  max-width: 100%;
+  padding: 15px 16px;
+  border-radius: 50px;
+}
+.search .sub-title .trend {
+  color: #FFF;
+  background-color: #f89047;
+  padding: 8px 22px 10px 22px;
+  margin-top: 14px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.search .sub-title .trend-car {
+  color: #757678;
+  padding-left: 16px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.search .title {
+  padding-top: 68px;
+}
+.search .title h1 {
+  font-size: 65px;
+  letter-spacing: 3px;
+  color: black;
+  font-weight: bold;
+}
+.search .text p {
+  padding-top: 17px;
+  font-size: 19px;
+  letter-spacing: 1px;
+  color: black;
+  font-weight: 400;
+  padding-bottom: 32px;
+}
+.search .search-eng {
+  display: flex;
+  background-color: #ffffff;
+  width: 900px;
+  max-width: 120%;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 1;
+  padding-bottom: 40px;
+}
+.search .search-eng a {
+  color: #a1a5a8;
+  font-size: 15px;
+}
+.search .search-eng .car-search .carselect {
+  width: 150px;
+  padding: 15px 10px;
+  margin: auto;
+  margin-top: 30px;
+}
+.search .search-eng .car-search .carselect .show {
+  display: block;
+}
+.search .search-eng .car-search .carselect ul {
+  display: none;
+  list-style-type: none;
+  padding-left: 0;
+}
+.search .search-eng .car-search .carselect ul :hover {
+  background-color: blue;
+  color: #FFF;
+}
+.search .search-eng .car-search .carselect ul li {
+  display: block;
+  padding: 7px 10px;
+  cursor: pointer;
+}
+.search .search-eng .car-search .carselect .carchoose {
+  font-size: 16px;
+  color: black;
+  cursor: pointer;
+  padding: 15px 10px;
+  border-right: 2px solid gray;
+}
+.search .search-eng .car-search .carselect .carchoose i {
+  padding-left: 10px;
+}
+.search .search-eng .car-search .classselect {
+  width: 150px;
+  padding: 15px 10px;
+  margin: auto;
+  margin-top: 30px;
+}
+.search .search-eng .car-search .classselect .show {
+  display: block;
+}
+.search .search-eng .car-search .classselect ul {
+  display: none;
+  list-style-type: none;
+  padding-left: 0;
+}
+.search .search-eng .car-search .classselect ul :hover {
+  background-color: blue;
+  color: #FFF;
+}
+.search .search-eng .car-search .classselect ul li {
+  display: block;
+  padding: 7px 10px;
+  cursor: pointer;
+}
+.search .search-eng .car-search .classselect .classchoose {
+  font-size: 16px;
+  color: black;
+  cursor: pointer;
+  padding: 15px 10px;
+  border-right: 2px solid gray;
+}
+.search .search-eng .car-search .classselect .classchoose i {
+  padding-left: 10px;
+}
+.search .search-eng .car-search .modelselect {
+  width: 150px;
+  padding: 15px 10px;
+  margin: auto;
+  margin-top: 30px;
+}
+.search .search-eng .car-search .modelselect .show {
+  display: block;
+}
+.search .search-eng .car-search .modelselect ul {
+  display: none;
+  list-style-type: none;
+  padding-left: 0;
+}
+.search .search-eng .car-search .modelselect ul :hover {
+  background-color: blue;
+  color: #FFF;
+}
+.search .search-eng .car-search .modelselect ul li {
+  display: block;
+  padding: 7px 10px;
+  cursor: pointer;
+}
+.search .search-eng .car-search .modelselect .modelchoose {
+  font-size: 16px;
+  color: black;
+  cursor: pointer;
+  padding: 15px 10px;
+  border-right: 2px solid gray;
+}
+.search .search-eng .car-search .modelselect .modelchoose i {
+  padding-left: 10px;
+}
+.search .search-eng .car-find {
+  padding: 56px 0 0 68px;
+}
+.search .search-eng .car-find .find {
+  padding: 33.5px 50px 36.5px 32px;
+  background-color: #0640e0;
+  border-radius: 10px;
+  font-weight: 700;
+  color: #f9fffb;
+}
+.search .search-eng .car-find .find i {
+  padding-left: 120px;
+  font-size: 20px;
+}
+.search .advanced {
+  display: block;
+  padding-top: 192px;
+  font-size: 19px;
+  padding-bottom: 67px;
+  color: #0841e6;
+  font-weight: bold;
+}
+.search .advanced i {
+  padding-left: 20px;
+}
+.search .pop-brends p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #8a8a8a;
+  padding-bottom: 4px;
+}
+.search .pop-brends .car-brands {
+  display: flex;
+}
+.search .pop-brends .car-brands a {
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  padding-left: 32px;
+}
+.search .pop-brends .car-brands .more a {
+  color: #c5c7c6;
+}
+.search .carouselExampleCaptions {
+  position: absolute;
+}
+.search .carousel-control-prev-icon {
+  top: 786px !important;
+  position: absolute;
+  left: 605px;
+}
+.search .carousel-control-next-icon {
+  top: 786px !important;
+  right: 97px !important;
+  position: absolute;
+}
+.search .carousel-inner {
+  position: absolute;
+}
+.search .carousel-inner .carousel-item {
+  position: relative;
+}
+.search .carousel-inner .carousel-item .carousel-caption {
+  position: relative;
+  top: -803px;
+  left: 107px;
+  text-align: left;
+}
+.search .carousel-inner .carousel-item .carousel-caption p {
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #fbfdfc;
+}
+.search .carousel-inner .carousel-item .carousel-caption h1 {
+  font-size: 30px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  color: #fcffff;
+}
+.search .carousel-inner .carousel-item img {
+  width: 988px;
+  height: 895px;
+  border-bottom-left-radius: 100px;
+  object-fit: cover;
+}
+.search .carousel-inner .carousel-price {
+  position: relative;
+  top: -906px;
+  right: 103px;
+  text-align: right;
+}
+.search .carousel-inner .carousel-price p {
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #fbfdfc;
+}
+.search .carousel-inner .carousel-price h1 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #fcffff;
+}
+.search .carousel-inner .carousel-dis {
+  position: relative;
+  top: -309px;
+  text-align: left;
+  left: 107px;
+}
+.search .carousel-inner .carousel-dis a {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 9px;
+  color: #fcfaf9;
+}
+
+.about {
+  position: relative;
+  padding-top: 320px;
+}
+.about img {
+  position: absolute;
+  left: 0px;
+  top: 320px;
+  width: 930px;
+  height: 870px;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-bottom-right-radius: 100px;
+  border-top-right-radius: 100px;
+  object-fit: cover;
+  object-position: left;
+}
+.about .sub-title {
+  width: 150px;
+  max-width: 100%;
+  margin-left: 360px;
+  margin-top: 80px;
+}
+.about .sub-title p {
+  font-size: 17px;
+  display: block;
+  letter-spacing: 10px;
+  color: #1538d4;
+  font-weight: bold;
+  text-align: left;
+}
+.about .title {
+  width: 400px;
+  max-width: 100%;
+  margin-left: 360px;
+}
+.about .title h1 {
+  width: 400px;
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: black;
+  font-weight: bold;
+}
+.about .about-text {
+  width: 700px;
+  max-width: 100%;
+  margin-left: 360px;
+  padding-top: 38px;
+  padding-bottom: 64px;
+}
+.about .about-text P {
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+.about .card {
+  text-decoration: none;
+  width: 350px;
+  max-width: 100%;
+  border: none !important;
+  box-shadow: #6b6969;
+}
+.about .card i {
+  padding: 64px 0 50px 48px;
+  font-size: 40px;
+  color: #0d3de5;
+}
+.about .card .card-body h5 {
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: black;
+  font-weight: 700;
+  padding: 0 0 10px 31px;
+}
+.about .card .card-body p {
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #6b6969;
+  padding: 0 22px 40px 31px;
+}
+
+.future {
+  margin-top: 433px;
+}
+.future .col-md-5 {
+  margin-top: 67px;
+}
+.future .col-md-5 a {
+  font-size: 20px;
+  font-variant: all-petite-caps;
+  background-color: #0640e0;
+  color: white;
+  border-radius: 10px;
+  padding: 19px 36px 24px 37px;
+}
+.future .col-md-5 .sub-title p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #5e605f;
+  letter-spacing: 1px;
+}
+.future .col-md-5 .title {
+  width: 500px;
+  max-width: 100%;
+}
+.future .col-md-5 .title h1 {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #010101;
+  padding-bottom: 32px;
+}
+.future .col-md-5 .text {
+  max-width: 100%;
+}
+.future .col-md-5 .text p {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #090909;
+  padding-bottom: 30px;
+}
+.future .col-md-6 .carousel-indicators .active {
+  background-color: white !important;
+}
+.future .col-md-6 .carousel-indicators {
+  position: absolute;
+}
+.future .col-md-6 .carousel-indicators ul li {
+  width: 13px;
+  height: 13px;
+  border: 2px solid white;
+  background-color: transparent;
+  border-radius: 100%;
+  position: relative;
+  bottom: 167px;
+  left: 278px;
+  margin-bottom: 10px;
+}
+.future .col-md-6 .carousel-item {
+  width: 750px !important;
+  height: 500px !important;
+  max-width: 100%;
+}
+.future .col-md-6 .carousel-item img {
+  width: 750px !important;
+  height: 500px !important;
+  max-width: 100%;
+  background-size: contain;
+  border-radius: 50px;
+  object-fit: cover;
+}
+
+.serve {
+  margin-top: 237px;
+}
+.serve i {
+  font-size: 60px;
+  color: #0640e0;
+}
+.serve .col-md-6 .carousel-indicators .active {
+  background-color: white !important;
+}
+.serve .col-md-6 button {
+  width: 13px;
+  height: 13px;
+  border: 2px solid white;
+  background-color: transparent;
+  border-radius: 100%;
+}
+.serve .col-md-6 .carousel-item {
+  width: 750px !important;
+  height: 500px !important;
+  max-width: 100%;
+}
+.serve .col-md-6 .carousel-item img {
+  width: 750px !important;
+  height: 500px !important;
+  max-width: 100%;
+  background-position: left;
+  background-size: contain;
+  border-radius: 50px;
+  object-fit: cover;
+}
+.serve .col-md-5 {
+  margin-top: 67px;
+}
+.serve .col-md-5 span {
+  font-size: 20px;
+  color: #515151;
+  border-bottom: 1px solid #515151;
+  margin-left: 20px;
+}
+.serve .col-md-5 .sub-title p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #5e605f;
+  letter-spacing: 1px;
+}
+.serve .col-md-5 .title {
+  width: 400px;
+  max-width: 100%;
+}
+.serve .col-md-5 .title h1 {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #010101;
+  padding-bottom: 32px;
+}
+.serve .col-md-5 .text {
+  max-width: 100%;
+}
+.serve .col-md-5 .text p {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #090909;
+  padding-bottom: 30px;
+}
+
+.swiper-section {
+  margin-top: 235px;
+}
+.swiper-section .swiper-title {
+  display: grid;
+  place-items: center;
+}
+.swiper-section .swiper {
+  margin-top: 97px;
+  width: 100%;
+  height: 100%;
+}
+.swiper-section .swiper .swiper-slide {
+  width: 510px !important;
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-section .swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-section .swiper .swiper-slide .card {
+  width: 510px;
+  height: 630px;
+  max-width: 100%;
+  border: none;
+  position: relative;
+}
+.swiper-section .swiper .swiper-slide .card img {
+  object-fit: cover;
+  object-position: left;
+  border-radius: 30px;
+}
+.swiper-section .swiper .swiper-slide .card .sub-title {
+  position: absolute;
+  top: 57px;
+  left: 40px;
+}
+.swiper-section .swiper .swiper-slide .card .sub-title p {
+  font-size: 15px;
+  color: #FFF;
+  letter-spacing: 2px;
+}
+.swiper-section .swiper .swiper-slide .card .title {
+  position: absolute;
+  bottom: 242px;
+  left: 40px;
+}
+.swiper-section .swiper .swiper-slide .card .title h4 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.swiper-section .swiper .swiper-slide .card .price {
+  position: absolute;
+  left: 40px;
+  bottom: 150px;
+}
+.swiper-section .swiper .swiper-slide .card .price a {
+  background-color: #0d3de5;
+  color: #FFF;
+  padding: 10px 29px 11px 27px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.swiper-section .swiper .swiper-slide .card .min-des {
+  position: absolute;
+  left: 40px;
+  bottom: 55px;
+}
+.swiper-section .swiper .swiper-slide .card .min-des .gear p {
+  font-size: 15px;
+  font-weight: bold;
+  color: #cbcbcb;
+  padding-right: 32px;
+}
+.swiper-section .swiper .swiper-slide .card .min-des .gear h6 {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  padding-right: 32px;
+}
+.swiper-section .swiper .swiper-slide .card .min-des .fuel p {
+  font-size: 15px;
+  font-weight: bold;
+  color: #cbcbcb;
+  padding-right: 32px;
+}
+.swiper-section .swiper .swiper-slide .card .min-des .fuel h6 {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  padding-right: 32px;
+  padding-left: 30px;
+}
+.swiper-section .swiper .swiper-slide .card .min-des .sits p {
+  font-size: 15px;
+  font-weight: bold;
+  color: #cbcbcb;
+  padding-right: 32px;
+  padding-left: 20px;
+}
+.swiper-section .swiper .swiper-slide .card .min-des .sits h6 {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  padding-right: 32px;
+  padding-left: 20px;
+}
+
+.question {
+  margin-top: 465px;
+}
+.question .row {
+  background-color: #0640e0;
+  border-radius: 50px;
+}
+.question .col-md-6 .title h1 {
+  font-size: 60px;
+  font-weight: 500;
+  color: #FFF;
+  letter-spacing: 1px;
+  padding: 80px 0 75px 104px;
+}
+.question .col-md-6 .contact-us .phone {
+  margin-left: 104px;
+}
+.question .col-md-6 .contact-us .phone .number {
+  color: #0640e0;
+  font-size: 17px;
+  font-weight: bold;
+  background-color: #FFF;
+  padding: 16px 22px 21px 0;
+  border-radius: 5px;
+}
+.question .col-md-6 .contact-us .phone .number i {
+  padding: 0 15px 0 24px;
+  font-size: 20px;
+}
+.question .col-md-6 .contact-us .contact {
+  margin-left: 23px;
+}
+.question .col-md-6 .contact-us .contact a {
+  color: white;
+  border: 1px solid white;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 15px 49px 20px 52px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+}
+.question .car {
+  height: 420px;
+  position: relative;
+}
+.question .car .img {
+  width: 220px;
+  height: 200px;
+  max-width: 100%;
+  background-color: #db8047;
+  border-radius: 100%;
+  position: absolute;
+  bottom: -160px !important;
+  object-fit: cover;
+}
+.question .car img {
+  position: absolute;
+  left: 60px;
+  bottom: 40px;
+  width: 635px;
+  height: 640px;
+  border-radius: 50px;
+  background-size: contain;
+  object-fit: cover;
+}
+
+.home-footer {
+  margin-top: 373px;
+  border-top: 1px solid #e5e5e5;
+}
+.home-footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 113px;
+}
+.home-footer .col-sm-3 ul li {
+  display: block;
+}
+.home-footer .col-sm-3 .mobhil a {
+  font-size: 50px;
+  font-weight: bold;
+  color: black;
+  padding-bottom: 11px;
+  display: block;
+}
+.home-footer .col-sm-3 .mobhil a i {
+  color: #088cca;
+}
+.home-footer .col-sm-3 .title p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #404040;
+  padding-bottom: 4px;
+}
+.home-footer .col-sm-3 .text {
+  width: 355px;
+  max-width: 100%;
+  padding-bottom: 34px;
+}
+.home-footer .col-sm-3 .text p {
+  font-size: 15px;
+  font-weight: 300;
+  color: #8e8e8e;
+}
+.home-footer .col-sm-3 .soc-med .youtube {
+  color: #0d3de5;
+}
+.home-footer .col-sm-3 .soc-med a {
+  font-size: 20px;
+  padding-right: 30px;
+  color: #a8bade;
+}
+.home-footer .qlinks {
+  margin-top: 30px;
+}
+.home-footer .qlinks ul li {
+  text-decoration: none;
+  display: block;
+}
+.home-footer .qlinks .title p {
+  font-size: 23px;
+  font-weight: 500;
+  color: black;
+  padding-bottom: 20px;
+  margin-left: 30px;
+}
+.home-footer .links a {
+  color: #7a7a7a;
+  padding-bottom: 15px;
+  display: block;
+}
+.home-footer .support {
+  margin-top: 27px;
+}
+.home-footer .support .title p {
+  font-size: 23px;
+  font-weight: 500;
+  color: black;
+  padding-bottom: 20px;
+  margin-left: 30px;
+}
+.home-footer .fut-contact {
+  margin-top: 32px;
+}
+.home-footer .fut-contact .title p {
+  font-size: 23px;
+  font-weight: 500;
+  color: black;
+  padding-bottom: 34px;
+}
+.home-footer .fut-contact .location {
+  max-width: 100%;
+  padding-bottom: 20px;
+}
+.home-footer .fut-contact .location a {
+  font-size: 17px;
+  font-weight: 500;
+  color: #5a5f63;
+  padding: 15px 25px 18px 47px;
+  background-color: #e8ecf8;
+  position: relative;
+  border-radius: 5px;
+}
+.home-footer .fut-contact .location a i {
+  font-size: 30px;
+  padding: 10px 13px 10px 13px;
+  background-color: #0640e0;
+  border-radius: 100%;
+  top: 2px;
+  position: absolute;
+  left: -20px;
+  color: #FFF;
+}
+.home-footer .fut-contact .fut-phone {
+  margin-top: 24px;
+}
+.home-footer .fut-contact .fut-phone a {
+  font-size: 17px;
+  font-weight: 500;
+  color: #5a5f63;
+  padding: 19px 25px 26px 47px;
+  background-color: #e8ecf8;
+  position: relative;
+  border-radius: 5px;
+}
+.home-footer .fut-contact .fut-phone a i {
+  font-size: 25px;
+  padding: 10px 13px 10px 13px;
+  background-color: #0640e0;
+  border-radius: 100%;
+  top: 10px;
+  position: absolute;
+  left: -20px;
+  color: #FFF;
+}
+.home-footer .rights {
+  margin-top: 114px;
+  text-align: center;
+  padding-bottom: 55px;
+}
+.home-footer .rights a {
+  font-size: 15px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  color: #818382;
+}
+
+@media only screen and (max-width: 1900px) and (min-width: 1500px) {
+  .about .col-lg-8 {
+    position: relative;
+  }
+  .about .about-text {
+    width: 600px;
+  }
+}
+@media only screen and (max-width: 1500px) and (min-width: 1200px) {
+  .web-title i {
+    font-size: 25px;
+  }
+  .web-title span {
+    font-size: 25px;
+  }
+  .underline {
+    width: 55px;
+  }
+  .nav-item a {
+    font-size: 16px;
+    padding-right: 15px !important;
+  }
+  .phone-number i {
+    padding: 15px 15px 14px 18px;
+  }
+  .lagndropdown .select {
+    padding: 8px 1px 8px 20px;
+  }
+  .lagndropdown .caret {
+    margin-right: 13px;
+  }
+  .lagndropdown .langs {
+    list-style: none;
+    padding: 3px 3px;
+    background-color: rgba(228, 220, 220, 0.103);
+    color: #333534;
+    position: absolute;
+    top: 3em;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+  }
+  .lagndropdown .langs li {
+    border-radius: 5px;
+    background-color: #0640e0;
+    color: #FFF;
+  }
+  .search .trending {
+    width: 590px !important;
+  }
+  .search .sub-title {
+    background-color: #f2f3f7;
+    width: 377px;
+    max-width: 100%;
+    padding: 15px 16px;
+    border-radius: 50px;
+  }
+  .search .sub-title .trend {
+    font-size: 14px;
+  }
+  .search .sub-title .trend-car {
+    font-size: 14px;
+  }
+  .search .title {
+    padding-top: 68px;
+  }
+  .search .title h1 {
+    font-size: 40px;
+    letter-spacing: 1px;
+  }
+  .search .text p {
+    font-size: 15px;
+  }
+  .search .search-eng .car-search {
+    display: inline-block;
+    width: 500px;
+    padding: 50px 0 55px 30px;
+  }
+  .search .search-eng .car-search .carselect {
+    margin: auto;
+  }
+  .search .search-eng .car-search .classselect {
+    margin: auto;
+  }
+  .search .search-eng .car-search .modelselect {
+    margin: auto;
+  }
+  .search .search-eng .car-find {
+    padding: 56px 0 0 0px;
+    width: 250px;
+    margin-top: 20px;
+  }
+  .search .search-eng .car-find .find {
+    padding: 20px 10px 20px 30px;
+  }
+  .search .search-eng .car-find .find i {
+    padding-left: 40px;
+    font-size: 20px;
+  }
+  .search .advanced {
+    margin-top: 192px;
+    padding: 0;
+    font-size: 16px;
+    padding-bottom: 67px;
+  }
+  .search .pop-brends p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #8a8a8a;
+    padding-bottom: 4px;
+  }
+  .search .pop-brends .car-brands {
+    display: flex;
+  }
+  .search .pop-brends .car-brands a {
+    font-size: 16px;
+    padding-left: 22px;
+  }
+  .search .carouselExampleCaptions {
+    position: absolute;
+  }
+  .search .carousel-control-prev-icon {
+    position: absolute;
+    left: 450px;
+  }
+  .search .carousel-control-next-icon {
+    right: 37px !important;
+    position: absolute;
+  }
+  .search .carousel-inner {
+    position: absolute;
+  }
+  .search .carousel-inner .carousel-item {
+    position: relative;
+  }
+  .search .carousel-inner .carousel-item .carousel-caption {
+    position: relative;
+    top: -870px;
+    left: 70px;
+  }
+  .search .carousel-inner .carousel-item .carousel-caption p {
+    font-size: 15px;
+  }
+  .search .carousel-inner .carousel-item .carousel-caption h1 {
+    font-size: 25px;
+  }
+  .search .carousel-inner .carousel-item img {
+    width: 590px;
+  }
+  .search .carousel-inner .carousel-price {
+    position: relative;
+    top: -970px;
+    right: 40px;
+  }
+  .search .carousel-inner .carousel-price p {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #fbfdfc;
+  }
+  .search .carousel-inner .carousel-price h1 {
+    font-size: 25px;
+  }
+  .search .carousel-inner .carousel-dis {
+    position: relative;
+    top: -309px;
+    text-align: left;
+    left: 107px;
+  }
+  .search .carousel-inner .carousel-dis a {
+    font-size: 15px;
+  }
+  .about img {
+    width: 660px;
+    height: 870px;
+  }
+  .about .sub-title {
+    margin-left: 280px;
+  }
+  .about .sub-title p {
+    font-size: 15px;
+  }
+  .about .title {
+    margin-left: 280px;
+  }
+  .about .title h1 {
+    width: 400px;
+    font-size: 30px;
+  }
+  .about .about-text {
+    width: 500px;
+    margin-left: 280px;
+    padding-top: 28px;
+    padding-bottom: 44px;
+  }
+  .about .about-text P {
+    font-size: 15px;
+  }
+  .about .card {
+    width: 350px;
+    max-width: 100%;
+    border: none !important;
+    background-color: #e9eceb;
+    box-shadow: #6b6969;
+  }
+  .about .card i {
+    padding: 44px 0 30px 28px;
+    font-size: 27px;
+    color: #0d3de5;
+  }
+  .about .card .card-body h5 {
+    font-size: 18px;
+    padding: 0 0 10px 15px;
+  }
+  .about .card .card-body p {
+    font-size: 15px;
+    padding: 0 10px 40px 15px;
+  }
+  .future .col-md-5 a {
+    font-size: 18px;
+    padding: 15px 30px 20px 32px;
+  }
+  .future .col-md-5 .sub-title p {
+    font-size: 16px;
+  }
+  .future .col-md-5 .title h1 {
+    font-size: 30px;
+  }
+  .future .col-md-5 .text p {
+    font-size: 15px;
+  }
+  .future .col-md-6 .carousel-indicators {
+    position: absolute;
+  }
+  .future .col-md-6 .carousel-indicators ul li {
+    left: 238px;
+  }
+  .future .col-md-6 .carousel-item {
+    width: 600px !important;
+  }
+  .future .col-md-6 .carousel-item img {
+    width: 600px !important;
+  }
+  .swiper-section {
+    margin-top: 235px;
+  }
+  .swiper-section .swiper-title {
+    display: grid;
+    place-items: center;
+  }
+  .swiper-section .swiper-title h1 {
+    font-size: 30px;
+    letter-spacing: 0px;
+    color: black;
+    padding-bottom: 20px;
+  }
+  .swiper-section .swiper-title p {
+    font-size: 18px;
+    color: black;
+    width: 540px;
+    text-align: center;
+    max-width: 100%;
+    padding-bottom: 20px;
+  }
+  .swiper-section .swiper {
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-section .swiper .swiper-slide {
+    width: 410px !important;
+    height: 550px;
+  }
+  .serve {
+    margin-top: 237px;
+  }
+  .serve i {
+    font-size: 45px;
+  }
+  .serve .col-md-6 .carousel-indicators .active {
+    background-color: white !important;
+  }
+  .serve .col-md-6 .carousel-item {
+    width: 600px !important;
+  }
+  .serve .col-md-6 .carousel-item img {
+    width: 600px !important;
+  }
+  .serve .col-md-5 {
+    margin-top: 67px;
+  }
+  .serve .col-md-5 span {
+    font-size: 17px;
+  }
+  .serve .col-md-5 .sub-title p {
+    font-size: 17px;
+  }
+  .serve .col-md-5 .title {
+    width: 400px;
+    max-width: 100%;
+  }
+  .serve .col-md-5 .title h1 {
+    font-size: 28px;
+  }
+  .serve .col-md-5 .text p {
+    font-size: 15px;
+  }
+  .question {
+    margin-top: 365px;
+  }
+  .question .col-md-6 .title h1 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #FFF;
+    letter-spacing: 1px;
+    padding: 80px 0 75px 104px;
+  }
+  .question .car {
+    position: relative;
+  }
+  .question .car .img {
+    width: 220px;
+    height: 200px;
+    max-width: 100%;
+    background-color: #db8047;
+    border-radius: 100%;
+    position: absolute;
+    bottom: -160px !important;
+    object-fit: cover;
+  }
+  .question .car img {
+    bottom: 60px;
+    width: 450px;
+    height: 550px;
+  }
+  .home-footer .col-sm-3 .mobhil a {
+    font-size: 35px;
+  }
+  .home-footer .qlinks {
+    margin-top: 10px;
+  }
+  .home-footer .qlinks .title p {
+    font-size: 20px;
+  }
+  .home-footer .support {
+    margin-top: 10px;
+  }
+  .home-footer .support .title p {
+    font-size: 20px;
+  }
+  .home-footer .fut-contact {
+    margin-top: 6px;
+  }
+  .home-footer .fut-contact .title p {
+    font-size: 20px;
+  }
+  .home-footer .fut-contact .location {
+    max-width: 100%;
+    padding-bottom: 20px;
+  }
+  .home-footer .fut-contact .location a {
+    font-size: 15px;
+    padding: 10px 10px 13px 30px;
+  }
+  .home-footer .fut-contact .location a i {
+    font-size: 20px;
+    padding: 8px 8px 8px 8px;
+    left: -10px;
+  }
+  .home-footer .fut-contact .fut-phone {
+    margin-top: 24px;
+  }
+  .home-footer .fut-contact .fut-phone a {
+    padding: 14px 20px 20px 30px;
+    background-color: #e8ecf8;
+  }
+  .home-footer .fut-contact .fut-phone a i {
+    font-size: 20px;
+    padding: 8px 8px 8px 8px;
+    left: -10px;
+  }
+}
+@media only screen and (max-width: 1200px) and (min-width: 991px) {
+  .nav-link {
+    background-color: #0d7ddf;
+    color: #FFF !important;
+    z-index: 999;
+  }
+  .underline {
+    display: none;
+  }
+  .nav-item a {
+    font-size: 15px;
+    padding-right: 5px !important;
+  }
+  .nav-item .dropdown-menu {
+    background-color: #0d7ddf;
+  }
+  .nav-item .dropdown-menu a {
+    color: #FFF !important;
+    z-index: 999;
+  }
+  .phone-number {
+    display: none;
+    z-index: 999;
+  }
+  .search .right {
+    display: none;
+  }
+  .search .trending {
+    margin-left: 50px;
+  }
+  .about img {
+    display: none;
+  }
+  .about .sub-title {
+    margin: 0;
+    position: relative;
+    right: 0;
+  }
+  .about .title {
+    margin: 0;
+    position: relative;
+    right: 0;
+  }
+  .about .about-text {
+    margin: 0;
+    position: relative;
+    right: 0;
+  }
+  .about .card {
+    margin: 0;
+    position: relative;
+    right: 0;
+    width: 300px !important;
+  }
+  .about .card i {
+    padding: 40px 0 50px 20px;
+  }
+  .about .card .card-body h5 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: black;
+    font-weight: 700;
+    padding: 0 0 10px 0;
+  }
+  .about .card .card-body p {
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #6b6969;
+    padding: 0 0 40px 0;
+  }
+  .future {
+    margin-top: 130px;
+  }
+  .future .col-md-5 {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .future .col-md-5 .title {
+    margin-left: 250px;
+  }
+  .future .col-md-6 {
+    display: none;
+  }
+  .swiper-section {
+    margin-top: 235px;
+  }
+  .swiper-section .swiper-title {
+    display: grid;
+    place-items: center;
+  }
+  .swiper-section .swiper-title h1 {
+    font-size: 30px;
+    letter-spacing: 0px;
+    color: black;
+    padding-bottom: 20px;
+  }
+  .swiper-section .swiper-title p {
+    font-size: 18px;
+    color: black;
+    width: 540px;
+    text-align: center;
+    max-width: 100%;
+    padding-bottom: 20px;
+  }
+  .swiper-section .swiper {
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-section .swiper .swiper-slide {
+    width: 410px !important;
+    height: 550px;
+  }
+  .serve {
+    margin-top: 237px;
+  }
+  .serve i {
+    font-size: 60px;
+    color: #0640e0;
+  }
+  .serve .col-md-6 {
+    display: none;
+  }
+  .serve .col-md-5 {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .serve .col-md-5 .title {
+    margin-left: 300px;
+  }
+  .question {
+    margin-top: 265px;
+  }
+  .question .col-md-6 .title h1 {
+    font-size: 40px;
+    padding: 80px 0 75px 104px;
+  }
+  .question .col-md-6 .contact-us .phone {
+    margin-left: 50px;
+  }
+  .question .col-md-6 .contact-us .phone .number {
+    color: #0640e0;
+    font-size: 17px;
+    padding: 16px 22px 21px 0;
+  }
+  .question .col-md-6 .contact-us .phone .number i {
+    padding: 0 15px 0 0;
+    font-size: 20px;
+  }
+  .question .car {
+    height: 420px;
+    position: relative;
+  }
+  .question .car .img {
+    width: 160px;
+    height: 140px;
+    bottom: -10px !important;
+  }
+  .question .car img {
+    position: absolute;
+    left: 60px;
+    bottom: 40px;
+    width: 415px;
+    height: 410px;
+    border-radius: 50px;
+    background-size: contain;
+    object-fit: cover;
+  }
+  .home-footer .col-sm-3 .mobhil a i {
+    display: none;
+  }
+  .home-footer .col-sm-3 .soc-med .linkedin {
+    display: none;
+  }
+  .home-footer .support {
+    margin-top: 30px;
+  }
+  .home-footer .fut-contact {
+    margin-top: 30px;
+  }
+  .home-footer .fut-contact .location a {
+    font-size: 15px;
+    padding: 0;
+    background-color: transparent;
+  }
+  .home-footer .fut-contact .location a i {
+    display: none;
+  }
+  .home-footer .fut-contact .fut-phone {
+    margin-top: 24px;
+  }
+  .home-footer .fut-contact .fut-phone a {
+    background-color: transparent;
+    padding: 0;
+  }
+  .home-footer .fut-contact .fut-phone a i {
+    display: none;
+  }
+}
+@media only screen and (max-width: 991px) and (min-width: 680px) {
+  .nav-link {
+    background-color: #0d7ddf;
+    color: #FFF !important;
+    z-index: 999;
+  }
+  .underline {
+    display: none;
+  }
+  .nav-item a {
+    font-size: 15px;
+    padding-right: 5px !important;
+  }
+  .nav-item .dropdown-menu {
+    background-color: #0d7ddf;
+  }
+  .nav-item .dropdown-menu a {
+    color: #FFF !important;
+    z-index: 999;
+  }
+  .phone-number {
+    display: none;
+  }
+  .search .right {
+    display: none;
+  }
+  .search .trending {
+    width: 100%;
+    max-width: 100%;
+  }
+  .search .title {
+    padding-top: 68px;
+    padding-left: 16px;
+    width: 350px;
+    max-width: 100%;
+  }
+  .search .title h1 {
+    font-size: 25px;
+  }
+  .search .text {
+    width: 400px;
+    max-width: 100%;
+    padding-left: 16px;
+  }
+  .search .text p {
+    font-size: 15px;
+  }
+  .search .search-eng {
+    max-width: 100%;
+  }
+  .search .search-eng .car-search {
+    padding: 50px 0 55px 16px;
+  }
+  .search .search-eng .car-search a i {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .search .search-eng .car-find {
+    padding: 56px 0 0 30px;
+    width: 250px;
+  }
+  .search .search-eng .car-find .find {
+    padding: 20px 10px 20px 30px;
+  }
+  .search .search-eng .car-find .find i {
+    padding-left: 40px;
+    font-size: 20px;
+  }
+  .search .advanced {
+    margin-top: 50px;
+    padding-left: 16px;
+  }
+  .search .pop-brends {
+    padding-left: 16px;
+  }
+  .search .pop-brends p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #8a8a8a;
+    padding-bottom: 4px;
+  }
+  .search .pop-brends .car-brands {
+    display: flex;
+  }
+  .search .pop-brends .car-brands a {
+    font-size: 16px;
+    padding-left: 22px;
+  }
+  .about {
+    margin-top: 150px;
+    padding: 0;
+  }
+  .about img {
+    display: none;
+  }
+  .about .sub-title {
+    padding: 15px;
+    margin: 0;
+  }
+  .about .sub-title p {
+    margin: 0;
+  }
+  .about .title {
+    margin: 0;
+    padding-left: 8px;
+  }
+  .about .title h1 {
+    margin: 0;
+    font-size: 25px;
+  }
+  .about .about-text {
+    margin: 0;
+    padding-left: 16px;
+  }
+  .about .about-text p {
+    margin: 0;
+    font-size: 14px;
+  }
+  .about .card {
+    margin: 0;
+    position: relative;
+    right: 0;
+    width: 100%;
+  }
+  .about .card i {
+    padding: 0;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .about .card .card-body h5 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: black;
+    font-weight: 700;
+    padding: 0 0 10px 0;
+    align-items: center;
+    text-align: center;
+  }
+  .about .card .card-body p {
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #6b6969;
+    padding: 0 0 40px 0;
+    align-items: center;
+    text-align: center;
+  }
+  .future {
+    margin-top: 150px;
+  }
+  .future .col-md-5 {
+    width: 600px;
+  }
+  .future .col-md-5 a {
+    font-size: 18px;
+    padding: 15px 30px 20px 32px;
+  }
+  .future .col-md-5 .sub-title p {
+    font-size: 16px;
+  }
+  .future .col-md-5 .title h1 {
+    font-size: 25px;
+  }
+  .future .col-md-5 .text {
+    max-width: 100%;
+  }
+  .future .col-md-5 .text p {
+    font-size: 15px;
+  }
+  .future .col-md-6 {
+    display: none;
+  }
+  .swiper-section {
+    margin-top: 150px;
+  }
+  .swiper-section .swiper-title {
+    display: grid;
+    place-items: center;
+  }
+  .swiper-section .swiper-title h1 {
+    font-size: 25px;
+  }
+  .swiper-section .swiper-title p {
+    font-size: 15px;
+    width: 540px;
+    text-align: center;
+    max-width: 100%;
+    padding-bottom: 20px;
+  }
+  .swiper-section .swiper {
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-section .swiper .swiper-slide {
+    width: 310px !important;
+    height: 350px;
+  }
+  .swiper-section .swiper .swiper-slide .card {
+    position: relative;
+  }
+  .swiper-section .swiper .swiper-slide .card .title {
+    position: absolute;
+    bottom: 420px;
+    left: 20px;
+  }
+  .swiper-section .swiper .swiper-slide .card .title h4 {
+    font-size: 20px;
+  }
+  .swiper-section .swiper .swiper-slide .card .price {
+    position: absolute;
+    left: 20px;
+    bottom: 300px;
+  }
+  .swiper-section .swiper .swiper-slide .card .price a {
+    background-color: #0d3de5;
+    color: #FFF;
+    padding: 8px 27px 9px 25px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .swiper-section .swiper .swiper-slide .card .min-des {
+    position: absolute;
+    left: 20px;
+    bottom: 155px;
+  }
+  .swiper-section .swiper .swiper-slide .card .min-des .gear p {
+    padding-right: 2px;
+  }
+  .swiper-section .swiper .swiper-slide .card .min-des .gear h6 {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    padding-right: 2px;
+  }
+  .swiper-section .swiper .swiper-slide .card .min-des .fuel p {
+    font-size: 15px;
+    font-weight: bold;
+    color: #cbcbcb;
+    padding-right: 2px;
+  }
+  .swiper-section .swiper .swiper-slide .card .min-des .fuel h6 {
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    padding-right: 2px;
+    padding-left: 10px;
+  }
+  .swiper-section .swiper .swiper-slide .card .min-des .sits p {
+    font-size: 15px;
+    font-weight: bold;
+    color: #cbcbcb;
+    padding-right: 32px;
+    padding-left: 10px;
+  }
+  .swiper-section .swiper .swiper-slide .card .min-des .sits h6 {
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    padding-right: 32px;
+    padding-left: 20px;
+  }
+  .serve {
+    margin-top: 237px;
+  }
+  .serve i {
+    font-size: 60px;
+    color: #0640e0;
+    margin-left: 16px;
+  }
+  .serve .col-md-6 {
+    display: none;
+  }
+  .serve .down {
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+  .serve .down .title {
+    margin-left: 16px;
+  }
+  .serve .down .sub-title {
+    margin-left: 16px;
+  }
+  .serve .down .text {
+    margin-left: 16px;
+  }
+  .question {
+    margin-top: 165px;
+  }
+  .question .col-md-6 {
+    width: 100%;
+  }
+  .question .col-md-6 .title h1 {
+    font-size: 30px;
+    padding: 10px 0 10px 100px;
+  }
+  .question .col-md-6 .contact-us .phone {
+    margin-left: 50px;
+    padding: 16px 10px 21px 50px;
+  }
+  .question .col-md-6 .contact-us .phone .number {
+    color: #0640e0;
+    font-size: 17px;
+  }
+  .question .col-md-6 .contact-us .phone .number i {
+    padding: 0 15px 10px 0;
+    font-size: 20px;
+  }
+  .question .col-md-6 .contact-us .contact {
+    padding: 16px 22px 21px 0;
+  }
+  .question .car {
+    display: none;
+  }
+  .home-footer {
+    margin-top: 150px;
+  }
+  .home-footer .col-sm-3 .mobhil a i {
+    display: none;
+  }
+  .home-footer .col-sm-3 .soc-med .linkedin {
+    display: none;
+  }
+  .home-footer .support {
+    margin-top: 30px;
+  }
+  .home-footer .fut-contact {
+    margin-top: 30px;
+  }
+  .home-footer .fut-contact .location a {
+    font-size: 15px;
+    padding: 0;
+    background-color: transparent;
+  }
+  .home-footer .fut-contact .location a i {
+    display: none;
+  }
+  .home-footer .fut-contact .fut-phone {
+    margin-top: 24px;
+  }
+  .home-footer .fut-contact .fut-phone a {
+    background-color: transparent;
+    padding: 0;
+  }
+  .home-footer .fut-contact .fut-phone a i {
+    display: none;
+  }
+}
+@media only screen and (max-width: 680px) and (min-width: 415px) {
+  .nav-link {
+    background-color: #0d7ddf;
+    color: #FFF !important;
+    z-index: 999;
+    overflow: hidden;
+  }
+  .underline {
+    display: none;
+  }
+  .nav-item a {
+    font-size: 15px;
+    padding-right: 5px !important;
+  }
+  .nav-item .dropdown-menu {
+    background-color: #0d7ddf;
+  }
+  .nav-item .dropdown-menu a {
+    color: #FFF !important;
+    z-index: 999;
+  }
+  .phone-number {
+    display: none;
+  }
+  .search .right {
+    display: none;
+  }
+  .search .trending {
+    width: 100%;
+    max-width: 100%;
+  }
+  .search .trending .sub-title a {
+    font-size: 13px;
+  }
+  .search .title {
+    padding-top: 68px;
+    padding-left: 16px;
+    width: 350px;
+    max-width: 100%;
+  }
+  .search .title h1 {
+    font-size: 25px;
+  }
+  .search .text {
+    width: 400px;
+    max-width: 100%;
+    padding-left: 16px;
+  }
+  .search .text p {
+    font-size: 15px;
+  }
+  .search .search-eng {
+    display: inline-block;
+    max-width: 100%;
+    padding: 0 !important;
+    height: 200px;
+  }
+  .search .search-eng .car-search {
+    display: inline-block;
+    padding: 0;
+  }
+  .search .search-eng .car-find {
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  .search .search-eng .car-find .find {
+    padding: 15px 5px 15px 25px;
+  }
+  .search .search-eng .car-find .find i {
+    padding-left: 40px;
+    font-size: 20px;
+  }
+  .search .advanced {
+    margin-top: 10px;
+    padding-left: 16px;
+  }
+  .search .pop-brends {
+    padding-left: 16px;
+  }
+  .search .pop-brends p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #8a8a8a;
+    padding-bottom: 4px;
+  }
+  .search .pop-brends .car-brands {
+    display: flex;
+  }
+  .search .pop-brends .car-brands a {
+    font-size: 16px;
+    padding-left: 22px;
+  }
+  .about {
+    margin-top: 150px;
+    padding: 0;
+    width: 100%;
+  }
+  .about img {
+    display: none;
+  }
+  .about .sub-title {
+    padding: 15px;
+    margin: 0;
+  }
+  .about .sub-title p {
+    margin: 0;
+  }
+  .about .title {
+    margin: 0;
+    padding-left: 8px;
+    width: 350px;
+  }
+  .about .title h1 {
+    width: 350px;
+    margin: 0;
+    font-size: 25px;
+  }
+  .about .about-text {
+    margin: 0;
+    padding-left: 16px;
+  }
+  .about .about-text p {
+    margin: 0;
+    font-size: 14px;
+  }
+  .about .card {
+    margin: 0;
+    position: relative;
+    right: 0;
+    width: 100%;
+  }
+  .about .card i {
+    padding: 0;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .about .card .card-body h5 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: black;
+    font-weight: 700;
+    padding: 0 0 10px 0;
+    align-items: center;
+    text-align: center;
+  }
+  .about .card .card-body p {
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #6b6969;
+    padding: 0 0 40px 0;
+    align-items: center;
+    text-align: center;
+  }
+  .future {
+    margin-top: 150px;
+  }
+  .future .col-md-5 {
+    width: 100%;
+  }
+  .future .col-md-5 a {
+    font-size: 18px;
+    padding: 15px 30px 20px 32px;
+  }
+  .future .col-md-5 .sub-title {
+    width: 350px;
+    max-width: 100%;
+  }
+  .future .col-md-5 .sub-title p {
+    width: 350px;
+    max-width: 100%;
+    font-size: 16px;
+  }
+  .future .col-md-5 .title {
+    width: 350px;
+    max-width: 100%;
+  }
+  .future .col-md-5 .title h1 {
+    font-size: 25px;
+    width: 350px;
+    max-width: 100%;
+  }
+  .future .col-md-5 .text {
+    width: 350px;
+    max-width: 100%;
+  }
+  .future .col-md-5 .text p {
+    width: 350px;
+    max-width: 100%;
+    font-size: 15px;
+  }
+  .future .col-md-6 {
+    display: none;
+  }
+  .swiper-section {
+    display: none;
+  }
+  .serve {
+    width: 100%;
+    margin-top: 237px;
+  }
+  .serve i {
+    font-size: 45px;
+    color: #0640e0;
+    margin-left: 16px;
+  }
+  .serve .col-md-6 {
+    display: none;
+  }
+  .serve .down {
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+  .serve .down .title {
+    margin-left: 16px;
+    width: 350px;
+    max-width: 100%;
+  }
+  .serve .down .title h1 {
+    font-size: 25px;
+    letter-spacing: 0px;
+  }
+  .serve .down .sub-title {
+    margin-left: 16px;
+    width: 350px;
+    max-width: 100%;
+  }
+  .serve .down .sub-title p {
+    width: 350px;
+    max-width: 100%;
+    font-size: 15px;
+    letter-spacing: 0px;
+  }
+  .serve .down .text {
+    width: 350px;
+    max-width: 100%;
+    margin-left: 16px;
+  }
+  .serve .down .text p {
+    width: 350px;
+    max-width: 100%;
+    font-size: 15px;
+  }
+  .question {
+    margin-top: 165px;
+  }
+  .question .col-md-6 {
+    width: 100%;
+  }
+  .question .col-md-6 .title {
+    margin: 0;
+  }
+  .question .col-md-6 .title h1 {
+    margin: 0;
+    font-size: 22px;
+    padding: 30px 0 40px 0;
+  }
+  .question .col-md-6 .contact-us {
+    padding-bottom: 50px;
+  }
+  .question .col-md-6 .contact-us .phone {
+    margin-left: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .question .col-md-6 .contact-us .phone .number {
+    color: #0640e0;
+    font-size: 15px;
+    margin-left: 0;
+  }
+  .question .col-md-6 .contact-us .phone .number i {
+    padding: 0 0 0 10px;
+    font-size: 20px;
+  }
+  .question .col-md-6 .contact-us .contact {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+  }
+  .question .col-md-6 .contact-us .contact a {
+    padding: 16px 22px 21px 10px;
+  }
+  .question .car {
+    display: none;
+  }
+  .home-footer {
+    margin-top: 150px;
+    display: block;
+  }
+  .home-footer .fut-mobhil {
+    margin-left: 40px;
+  }
+  .home-footer .support {
+    margin-top: 30px;
+  }
+  .home-footer .fut-contact {
+    margin-top: 30px;
+    margin-left: 40px;
+  }
+  .home-footer .fut-contact .location a {
+    font-size: 15px;
+    padding: 15px 15px 15px 15px;
+    background-color: #0640e0;
+    color: #FFF;
+  }
+  .home-footer .fut-contact .location a i {
+    display: none;
+  }
+  .home-footer .fut-contact .fut-phone {
+    margin-top: 24px;
+  }
+  .home-footer .fut-contact .fut-phone a {
+    padding: 15px 15px 15px 15px;
+    background-color: #0640e0;
+    color: #FFF;
+  }
+  .home-footer .fut-contact .fut-phone a i {
+    display: none;
+  }
+}
+@media only screen and (max-width: 415px) {
+  .nav-link {
+    background-color: #0d7ddf;
+    color: #FFF !important;
+    z-index: 999;
+    overflow: hidden;
+  }
+  .underline {
+    display: none;
+  }
+  .nav-item a {
+    font-size: 15px;
+    padding-right: 5px !important;
+  }
+  .nav-item .dropdown-menu {
+    background-color: #0d7ddf;
+  }
+  .nav-item .dropdown-menu a {
+    color: #FFF !important;
+    z-index: 999;
+  }
+  .phone-number {
+    display: none;
+  }
+  .search .right {
+    display: none;
+  }
+  .search .trending {
+    width: 100%;
+    max-width: 100%;
+  }
+  .search .trending .sub-title a {
+    font-size: 13px;
+  }
+  .search .title {
+    padding-top: 68px;
+    padding-left: 16px;
+    width: 350px;
+    max-width: 100%;
+  }
+  .search .title h1 {
+    font-size: 25px;
+  }
+  .search .text {
+    width: 400px;
+    max-width: 100%;
+    padding-left: 16px;
+  }
+  .search .text p {
+    font-size: 15px;
+  }
+  .search .search-eng {
+    max-width: 100%;
+    padding: 0 !important;
+    display: block;
+  }
+  .search .search-eng .carselect {
+    width: 100px;
+    padding: 5px 5px;
+    margin: auto;
+  }
+  .search .search-eng .carselect .show {
+    display: block;
+  }
+  .search .search-eng .carselect .carchoose {
+    font-size: 15px;
+    color: black;
+    cursor: pointer;
+    padding: 5px 6px;
+    border-right: 2px solid gray;
+  }
+  .search .search-eng .carselect .carchoose i {
+    display: none;
+  }
+  .search .search-eng .classselect {
+    width: 100px;
+    padding: 5px 5px;
+    margin: auto;
+  }
+  .search .search-eng .classselect .show {
+    display: block;
+  }
+  .search .search-eng .classselect .classchoose {
+    font-size: 15px;
+    color: black;
+    cursor: pointer;
+    padding: 5px 6px;
+    border-right: 2px solid gray;
+  }
+  .search .search-eng .classselect .classchoose i {
+    display: none;
+  }
+  .search .search-eng .modelselect {
+    width: 100px;
+    padding: 5px 5px;
+    margin: auto;
+  }
+  .search .search-eng .modelselect .show {
+    display: block;
+  }
+  .search .search-eng .modelselect .modelchoose {
+    font-size: 15px;
+    color: black;
+    cursor: pointer;
+    padding: 5px 6px;
+    border-right: 2px solid gray;
+  }
+  .search .search-eng .modelselect .modelchoose i {
+    display: none;
+  }
+  .search .search-eng .car-find {
+    margin-left: 110px;
+    margin-top: 30px;
+    padding: 0;
+  }
+  .search .search-eng .car-find .find {
+    padding: 15px 5px 15px 25px;
+  }
+  .search .search-eng .car-find .find i {
+    padding-left: 40px;
+    font-size: 20px;
+  }
+  .search .advanced {
+    padding: -20px 0px 0px 0px;
+    margin-top: 200px;
+    padding-left: 16px;
+    height: 20px;
+    width: 100%;
+  }
+  .search .pop-brends {
+    padding-left: 16px;
+  }
+  .search .pop-brends p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #8a8a8a;
+    padding-bottom: 4px;
+  }
+  .search .pop-brends .car-brands {
+    display: flex;
+  }
+  .search .pop-brends .car-brands a {
+    font-size: 16px;
+    padding-left: 22px;
+  }
+  .search .pop-brends .more {
+    display: none;
+  }
+  .about {
+    margin-top: 150px;
+    padding: 0;
+    width: 100%;
+  }
+  .about img {
+    display: none;
+  }
+  .about .sub-title {
+    padding: 15px;
+    margin: 0;
+  }
+  .about .sub-title p {
+    margin: 0;
+  }
+  .about .title {
+    margin: 0;
+    padding-left: 8px;
+    width: 350px;
+  }
+  .about .title h1 {
+    width: 350px;
+    margin: 0;
+    font-size: 25px;
+  }
+  .about .about-text {
+    margin: 0;
+    padding-left: 16px;
+  }
+  .about .about-text p {
+    margin: 0;
+    font-size: 14px;
+  }
+  .about .card {
+    margin: 0;
+    position: relative;
+    right: 0;
+    width: 100%;
+  }
+  .about .card i {
+    padding: 0;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .about .card .card-body h5 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: black;
+    font-weight: 700;
+    padding: 0 0 10px 0;
+    align-items: center;
+    text-align: center;
+  }
+  .about .card .card-body p {
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #6b6969;
+    padding: 0 0 40px 0;
+    align-items: center;
+    text-align: center;
+  }
+  .future {
+    margin-top: 150px;
+  }
+  .future .col-md-5 {
+    width: 100%;
+  }
+  .future .col-md-5 a {
+    font-size: 18px;
+    padding: 15px 30px 20px 32px;
+  }
+  .future .col-md-5 .sub-title {
+    width: 350px;
+    max-width: 100%;
+  }
+  .future .col-md-5 .sub-title p {
+    width: 350px;
+    max-width: 100%;
+    font-size: 16px;
+  }
+  .future .col-md-5 .title {
+    width: 350px;
+    max-width: 100%;
+  }
+  .future .col-md-5 .title h1 {
+    font-size: 25px;
+    width: 350px;
+    max-width: 100%;
+  }
+  .future .col-md-5 .text {
+    width: 350px;
+    max-width: 100%;
+  }
+  .future .col-md-5 .text p {
+    width: 350px;
+    max-width: 100%;
+    font-size: 15px;
+  }
+  .future .col-md-6 {
+    display: none;
+  }
+  .swiper-section {
+    display: none;
+  }
+  .serve {
+    width: 100%;
+    margin-top: 237px;
+  }
+  .serve i {
+    font-size: 45px;
+    color: #0640e0;
+    margin-left: 16px;
+  }
+  .serve .col-md-6 {
+    display: none;
+  }
+  .serve .down {
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+  .serve .down .title {
+    margin-left: 16px;
+    width: 350px;
+    max-width: 100%;
+  }
+  .serve .down .title h1 {
+    font-size: 25px;
+    letter-spacing: 0px;
+  }
+  .serve .down .sub-title {
+    margin-left: 16px;
+    width: 350px;
+    max-width: 100%;
+  }
+  .serve .down .sub-title p {
+    width: 350px;
+    max-width: 100%;
+    font-size: 15px;
+    letter-spacing: 0px;
+  }
+  .serve .down .text {
+    width: 350px;
+    max-width: 100%;
+    margin-left: 16px;
+  }
+  .serve .down .text p {
+    width: 350px;
+    max-width: 100%;
+    font-size: 15px;
+  }
+  .question {
+    margin-top: 165px;
+    display: none;
+  }
+  .question .col-md-6 {
+    width: 100%;
+  }
+  .question .col-md-6 .title {
+    margin: 0;
+  }
+  .question .col-md-6 .title h1 {
+    margin: 0;
+    font-size: 22px;
+    padding: 30px 0 40px 0;
+  }
+  .question .col-md-6 .contact-us {
+    padding-bottom: 50px;
+  }
+  .question .col-md-6 .contact-us .phone {
+    margin-left: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .question .col-md-6 .contact-us .phone .number {
+    color: #0640e0;
+    font-size: 15px;
+    margin-left: 0;
+  }
+  .question .col-md-6 .contact-us .phone .number i {
+    padding: 0 0 0 10px;
+    font-size: 20px;
+  }
+  .question .col-md-6 .contact-us .contact {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+  }
+  .question .col-md-6 .contact-us .contact a {
+    padding: 16px 22px 21px 10px;
+  }
+  .question .car {
+    display: none;
+  }
+  .home-footer {
+    margin-top: 150px;
+  }
+  .home-footer .fut-mobhil {
+    margin-left: 20px;
+  }
+  .home-footer .fut-mobhil .text {
+    width: 300px;
+  }
+  .home-footer .support {
+    margin-top: 30px;
+  }
+  .home-footer .fut-contact {
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  .home-footer .fut-contact .location {
+    width: 100%;
+  }
+  .home-footer .fut-contact .location a {
+    font-size: 15px;
+    padding: 15px 15px 15px 15px;
+    background-color: #0640e0;
+    color: #FFF;
+  }
+  .home-footer .fut-contact .location a i {
+    display: none;
+  }
+  .home-footer .fut-contact .fut-phone {
+    margin-top: 24px;
+  }
+  .home-footer .fut-contact .fut-phone a {
+    padding: 15px 15px 15px 15px;
+    background-color: #0640e0;
+    color: #FFF;
+  }
+  .home-footer .fut-contact .fut-phone a i {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */

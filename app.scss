@@ -1,0 +1,3741 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+    background-color: #f4f5f983;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1642px !important;
+    max-width: 100%;
+    margin: auto;
+}
+
+.my-color {
+    background-color: #fff;
+}
+
+.web-title {
+
+    i {
+        font-size: 35px;
+        padding-right: 5px;
+        color: #0640e0;
+    }
+
+    span {
+        font-size: 35px;
+        font-family: 'Poppins', sans-serif;
+        color: #292728;
+        font-weight: 700;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 144px;
+    position: relative;
+    box-shadow: 0 5px 5px #f4f5f9;
+
+}
+
+.underline {
+    position: absolute;
+    width: 65px;
+    height: 6px;
+    background-color: #0640e0;
+    display: block;
+    top: 138px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.nav-item {
+
+    a {
+        display: block;
+        font-size: 16px;
+        color: #454545;
+        position: relative;
+        padding-right: 20px !important;
+
+    }
+
+
+}
+
+.phone-number {
+    background-color: #f3f4f8;
+
+    i {
+        padding: 19px 19px 18px 23px;
+        color: #0c3fd8;
+    }
+
+    span {
+        padding-left: 15px;
+    }
+}
+
+.lagndropdown {
+    width: 99px;
+    position: relative;
+    margin: 25px;
+
+    .select {
+        color: #333534;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 2px #ebeaf8 solid;
+        padding: 15px 1px 16px 25px;
+        cursor: pointer;
+        transition: background 0.3s;
+        border-radius: 5px;
+
+    }
+
+    .caret {
+        display: block;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #0640e0;
+        transition: 0.3s;
+        margin-right: 18px;
+    }
+
+    .langs {
+        list-style: none;
+        padding: 3px 3px;
+        background-color: rgba(228, 220, 220, 0.103);
+        color: #333534;
+        position: absolute;
+        top: 3em;
+        left: 50%;
+        width: 100%;
+        transform: translateX(-50%);
+        opacity: 0;
+        display: none;
+        transition: 0.2s;
+        z-index: 1;
+
+        li {
+            padding: 4px 4px;
+            margin: 3px 0;
+            border-radius: 10px;
+            cursor: pointer;
+
+
+
+        }
+    }
+
+    .active {
+        background-color: #0640e041;
+    }
+
+    .langs-open {
+        display: block;
+        opacity: 1;
+    }
+}
+
+
+.search {
+    .right {
+        padding-right: 0 !important;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .trending {
+        width: 760px !important;
+        width: 100%;
+        padding-top: 127px;
+        position: relative;
+
+    }
+
+    .sub-title {
+        background-color: #f2f3f7;
+        width: 377px;
+        max-width: 100%;
+        padding: 15px 16px;
+        border-radius: 50px;
+
+        .trend {
+            color: #FFF;
+            background-color: #f89047;
+            padding: 8px 22px 10px 22px;
+            margin-top: 14px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .trend-car {
+            color: #757678;
+            padding-left: 16px;
+            font-size: 16px;
+            font-weight: 700;
+
+        }
+    }
+
+    .title {
+        padding-top: 68px;
+
+        h1 {
+            font-size: 65px;
+            letter-spacing: 3px;
+            color: black;
+            font-weight: bold;
+
+        }
+
+    }
+
+    .text {
+        p {
+            padding-top: 17px;
+            font-size: 19px;
+            letter-spacing: 1px;
+            color: black;
+            font-weight: 400;
+            padding-bottom: 32px;
+
+        }
+    }
+
+    .search-eng {
+        display: flex;
+        background-color: #ffffff;
+        width: 900px;
+        max-width: 120%;
+        border-radius: 10px;
+        position: absolute;
+        z-index: 1;
+        padding-bottom: 40px;
+        a {
+            color: #a1a5a8;
+            font-size: 15px;
+        }
+        .car-search{
+            .carselect{
+                width: 150px;
+                padding: 15px 10px;
+                margin: auto;
+                margin-top: 30px;
+                .show{
+                    display: block;
+                }
+                ul{
+                    display: none;
+                    list-style-type: none;
+                    padding-left: 0;
+                    :hover{
+                        background-color: blue;
+                        color: #FFF;
+                    }
+                    li{
+                        display: block;
+                        padding: 7px 10px;
+                        cursor: pointer;
+                    }
+                }
+                .carchoose{
+                    font-size: 16px;
+                    color: black;
+                    cursor: pointer;
+                    padding: 15px 10px;
+                    border-right: 2px solid gray;
+                    i{
+                        padding-left: 10px;
+                    }
+                }
+            }
+            .classselect{
+                width: 150px;
+                padding: 15px 10px;
+                margin: auto;
+                margin-top: 30px;
+                .show{
+                    display: block;
+                }
+                ul{
+                    display: none;
+                    list-style-type: none;
+                    padding-left: 0;
+                    :hover{
+                        background-color: blue;
+                        color: #FFF;
+                    }
+                    li{
+                        display: block;
+                        padding: 7px 10px;
+                        cursor: pointer;
+                    }
+                }
+                .classchoose{
+                    font-size: 16px;
+                    color: black;
+                    cursor: pointer;
+                    padding: 15px 10px;
+                    border-right: 2px solid gray;
+                    i{
+                        padding-left: 10px;
+                    }
+                }
+            }
+            .modelselect{
+                width: 150px;
+                padding: 15px 10px;
+                margin: auto;
+                margin-top: 30px;
+                .show{
+                    display: block;
+                }
+                ul{
+                    display: none;
+                    list-style-type: none;
+                    padding-left: 0;
+                    :hover{
+                        background-color: blue;
+                        color: #FFF;
+                    }
+                    li{
+                        display: block;
+                        padding: 7px 10px;
+                        cursor: pointer;
+                    }
+                }
+                .modelchoose{
+                    font-size: 16px;
+                    color: black;
+                    cursor: pointer;
+                    padding: 15px 10px;
+                    border-right: 2px solid gray;
+                    i{
+                        padding-left: 10px;
+                    }
+                }
+            }
+
+        }
+
+
+
+
+        .car-find {
+            padding: 56px 0 0 68px;
+
+            .find {
+                padding: 33.5px 50px 36.5px 32px;
+                background-color: #0640e0;
+                border-radius: 10px;
+                font-weight: 700;
+                color: #f9fffb;
+
+                i {
+                    padding-left: 120px;
+                    font-size: 20px;
+                }
+
+            }
+
+        }
+
+
+    }
+
+    .advanced {
+        display: block;
+        padding-top: 192px;
+        font-size: 19px;
+        padding-bottom: 67px;
+        color: #0841e6;
+        font-weight: bold;
+
+        i {
+            padding-left: 20px;
+        }
+    }
+
+    .pop-brends {
+        p {
+            font-size: 15px;
+            font-weight: 400;
+            color: #8a8a8a;
+            padding-bottom: 4px;
+        }
+
+        .car-brands {
+            display: flex;
+
+            a {
+                font-size: 20px;
+                font-weight: 700;
+                color: black;
+                padding-left: 32px;
+            }
+
+            .more {
+                a {
+                    color: #c5c7c6;
+                }
+            }
+        }
+    }
+
+    .carouselExampleCaptions {
+        position: absolute;
+
+    }
+
+    .carousel-control-prev-icon {
+
+        top: 786px !important;
+        position: absolute;
+        left: 605px;
+    }
+
+    .carousel-control-next-icon {
+        top: 786px !important;
+        right: 97px !important;
+        position: absolute;
+
+    }
+
+
+    .carousel-inner {
+        position: absolute;
+
+        .carousel-item {
+            position: relative;
+
+            .carousel-caption {
+                position: relative;
+                top: -803px;
+                left: 107px;
+                text-align: left;
+
+                p {
+                    font-size: 15px;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    color: #fbfdfc;
+                }
+
+                h1 {
+                    font-size: 30px;
+                    font-weight: 100;
+                    letter-spacing: 2px;
+                    color: #fcffff;
+                }
+            }
+
+            img {
+                width: 988px;
+                height: 895px;
+                border-bottom-left-radius: 100px;
+                object-fit: cover;
+
+            }
+
+        }
+
+        .carousel-price {
+            position: relative;
+            top: -906px;
+            right: 103px;
+            text-align: right;
+
+            p {
+                font-size: 15px;
+                font-weight: bold;
+                letter-spacing: 1px;
+                color: #fbfdfc;
+            }
+
+            h1 {
+                font-size: 30px;
+                font-weight: 700;
+                letter-spacing: 2px;
+                color: #fcffff;
+            }
+        }
+
+        .carousel-dis {
+            position: relative;
+            top: -309px;
+            text-align: left;
+            left: 107px;
+
+            a {
+                font-size: 16px;
+                font-weight: 400;
+                letter-spacing: 9px;
+                color: #fcfaf9;
+            }
+        }
+    }
+
+
+}
+
+.about {
+    position: relative;
+    padding-top: 320px;
+
+    img {
+
+        position: absolute;
+        left: 0px;
+        top: 320px;
+        width: 930px;
+        height: 870px;
+        max-width: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-bottom-right-radius: 100px;
+        border-top-right-radius: 100px;
+        object-fit: cover;
+        object-position: left;
+
+
+    }
+
+    .sub-title {
+        width: 150px;
+        max-width: 100%;
+        margin-left: 360px;
+        margin-top: 80px;
+
+        p {
+            font-size: 17px;
+            display: block;
+            letter-spacing: 10px;
+            color: #1538d4;
+            font-weight: bold;
+            text-align: left;
+        }
+
+
+    }
+
+    .title {
+        width: 400px;
+        max-width: 100%;
+        margin-left: 360px;
+
+        h1 {
+            width: 400px;
+            font-size: 40px;
+            letter-spacing: 2px;
+            color: black;
+            font-weight: bold;
+        }
+    }
+
+    .about-text {
+        width: 700px;
+        max-width: 100%;
+        margin-left: 360px;
+        padding-top: 38px;
+        padding-bottom: 64px;
+
+        P {
+            font-size: 17px;
+            letter-spacing: 1px;
+
+        }
+    }
+
+    .card {
+        text-decoration: none;
+        width: 350px;
+        max-width: 100%;
+        border: none !important;
+        box-shadow: #6b6969;
+
+        i {
+            padding: 64px 0 50px 48px;
+            font-size: 40px;
+            color: #0d3de5;
+
+        }
+
+        .card-body {
+            h5 {
+                font-size: 20px;
+                letter-spacing: 1px;
+                color: black;
+                font-weight: 700;
+                padding: 0 0 10px 31px;
+            }
+
+            p {
+                font-size: 17px;
+                font-weight: 400;
+                letter-spacing: 1px;
+                color: #6b6969;
+                padding: 0 22px 40px 31px;
+            }
+        }
+    }
+}
+
+.future {
+    margin-top: 433px;
+
+    .col-md-5 {
+        margin-top: 67px;
+
+        a {
+            font-size: 20px;
+            font-variant: all-petite-caps;
+            background-color: #0640e0;
+            color: white;
+            border-radius: 10px;
+            padding: 19px 36px 24px 37px;
+        }
+
+        .sub-title {
+            p {
+                font-size: 20px;
+                font-weight: 500;
+                color: #5e605f;
+                letter-spacing: 1px;
+            }
+
+        }
+
+        .title {
+            width: 500px;
+            max-width: 100%;
+
+            h1 {
+                font-size: 40px;
+                font-weight: bold;
+                letter-spacing: 2px;
+                color: #010101;
+                padding-bottom: 32px;
+            }
+        }
+
+        .text {
+            max-width: 100%;
+
+            p {
+                font-size: 18px;
+                font-weight: 400;
+                letter-spacing: 1px;
+                color: #090909;
+                padding-bottom: 30px;
+            }
+        }
+    }
+
+    .col-md-6 {
+        .carousel-indicators .active {
+            background-color: white !important;
+        }
+
+        .carousel-indicators {
+            position: absolute;
+
+            ul {
+
+                li {
+                    width: 13px;
+                    height: 13px;
+                    border: 2px solid white;
+                    background-color: transparent;
+                    border-radius: 100%;
+                    position: relative;
+                    bottom: 167px;
+                    left: 278px;
+                    margin-bottom: 10px;
+
+
+                }
+            }
+
+        }
+
+        .carousel-item {
+            width: 750px !important;
+            height: 500px !important;
+            max-width: 100%;
+
+            img {
+                width: 750px !important;
+                height: 500px !important;
+                max-width: 100%;
+                background-size: contain;
+                border-radius: 50px;
+                object-fit: cover;
+
+
+            }
+        }
+    }
+}
+
+.serve {
+    i {
+        font-size: 60px;
+        color: #0640e0;
+    }
+
+    margin-top: 237px;
+
+    .col-md-6 {
+        .carousel-indicators .active {
+            background-color: white !important;
+
+        }
+
+        button {
+            width: 13px;
+            height: 13px;
+            border: 2px solid white;
+            background-color: transparent;
+            border-radius: 100%;
+
+        }
+
+
+
+
+
+        .carousel-item {
+            width: 750px !important;
+            height: 500px !important;
+            max-width: 100%;
+
+            img {
+                width: 750px !important;
+                height: 500px !important;
+                max-width: 100%;
+                background-position: left;
+                background-size: contain;
+                border-radius: 50px;
+                object-fit: cover;
+
+
+
+            }
+        }
+    }
+
+    .col-md-5 {
+        margin-top: 67px;
+
+        span {
+            font-size: 20px;
+            color: #515151;
+            border-bottom: 1px solid #515151;
+            margin-left: 20px;
+
+        }
+
+        .sub-title {
+            p {
+                font-size: 20px;
+                font-weight: 500;
+                color: #5e605f;
+                letter-spacing: 1px;
+            }
+
+        }
+
+        .title {
+            width: 400px;
+            max-width: 100%;
+
+            h1 {
+                font-size: 40px;
+                font-weight: bold;
+                letter-spacing: 2px;
+                color: #010101;
+                padding-bottom: 32px;
+            }
+        }
+
+        .text {
+            max-width: 100%;
+
+            p {
+                font-size: 18px;
+                font-weight: 400;
+                letter-spacing: 1px;
+                color: #090909;
+                padding-bottom: 30px;
+            }
+        }
+    }
+}
+
+.swiper-section {
+    margin-top: 235px;
+
+    .swiper-title {
+        display: grid;
+        place-items: center;
+    }
+
+    .swiper {
+        margin-top: 97px;
+        width: 100%;
+        height: 100%;
+
+        .swiper-slide {
+            width: 510px !important;
+            text-align: center;
+            font-size: 18px;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+
+            }
+
+
+            .card {
+                img {
+                    object-fit: cover;
+                    object-position: left;
+                    border-radius: 30px;
+                }
+
+                width: 510px;
+                height: 630px;
+                max-width: 100%;
+                border: none;
+                position: relative;
+
+                .sub-title {
+                    position: absolute;
+                    top: 57px;
+                    left: 40px;
+
+                    p {
+                        font-size: 15px;
+                        color: #FFF;
+                        letter-spacing: 2px;
+                    }
+                }
+
+                .title {
+                    position: absolute;
+                    bottom: 242px;
+                    left: 40px;
+
+                    h4 {
+                        font-size: 30px;
+                        font-weight: bold;
+                        color: #fff;
+                        letter-spacing: 1px;
+                    }
+                }
+
+                .price {
+                    position: absolute;
+                    left: 40px;
+                    bottom: 150px;
+
+                    a {
+                        background-color: #0d3de5;
+                        color: #FFF;
+                        padding: 10px 29px 11px 27px;
+                        border-radius: 30px;
+                        font-size: 15px;
+                        font-weight: bold;
+
+                    }
+                }
+
+                .min-des {
+                    position: absolute;
+                    left: 40px;
+                    bottom: 55px;
+
+                    .gear {
+                        p {
+                            font-size: 15px;
+                            font-weight: bold;
+                            color: #cbcbcb;
+                            padding-right: 32px;
+                        }
+
+                        h6 {
+                            font-size: 18px;
+                            font-weight: 500;
+                            color: white;
+                            padding-right: 32px;
+                        }
+
+                    }
+
+                    .fuel {
+                        p {
+                            font-size: 15px;
+                            font-weight: bold;
+                            color: #cbcbcb;
+                            padding-right: 32px;
+                        }
+
+                        h6 {
+                            font-size: 18px;
+                            font-weight: 500;
+                            color: white;
+                            padding-right: 32px;
+                            padding-left: 30px;
+                        }
+                    }
+
+                    .sits {
+                        p {
+                            font-size: 15px;
+                            font-weight: bold;
+                            color: #cbcbcb;
+                            padding-right: 32px;
+                            padding-left: 20px;
+                        }
+
+                        h6 {
+                            font-size: 18px;
+                            font-weight: 500;
+                            color: white;
+                            padding-right: 32px;
+                            padding-left: 20px;
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+
+
+.question {
+    margin-top: 465px;
+
+    .row {
+        background-color: #0640e0;
+        border-radius: 50px;
+    }
+
+    .col-md-6 {
+        .title {
+            h1 {
+                font-size: 60px;
+                font-weight: 500;
+                color: #FFF;
+                letter-spacing: 1px;
+                padding: 80px 0 75px 104px;
+            }
+        }
+
+        .contact-us {
+
+            .phone {
+                margin-left: 104px;
+
+                .number {
+                    color: #0640e0;
+                    font-size: 17px;
+                    font-weight: bold;
+                    background-color: #FFF;
+                    padding: 16px 22px 21px 0;
+                    border-radius: 5px;
+
+                    i {
+                        padding: 0 15px 0 24px;
+                        font-size: 20px;
+                    }
+                }
+            }
+
+
+            .contact {
+                margin-left: 23px;
+
+                a {
+                    color: white;
+                    border: 1px solid white;
+                    font-size: 17px;
+                    font-weight: 500;
+                    padding: 15px 49px 20px 52px;
+                    border-radius: 5px;
+                    letter-spacing: 1px;
+                }
+
+            }
+        }
+
+    }
+
+    .car {
+        height: 420px;
+        position: relative;
+
+        .img {
+            width: 220px;
+            height: 200px;
+            max-width: 100%;
+            background-color: #db8047;
+            border-radius: 100%;
+            position: absolute;
+            bottom: -160px !important;
+            object-fit: cover;
+
+        }
+
+        img {
+            position: absolute;
+            left: 60px;
+            bottom: 40px;
+            width: 635px;
+            height: 640px;
+            border-radius: 50px;
+            background-size: contain;
+            object-fit: cover;
+
+
+        }
+    }
+}
+
+.home-footer {
+    margin-top: 373px;
+    border-top: 1px solid #e5e5e5;
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 113px;
+    }
+
+    .col-sm-3 {
+        ul {
+            li {
+                display: block;
+            }
+        }
+
+        .mobhil {
+            a {
+                font-size: 50px;
+                font-weight: bold;
+                color: black;
+                padding-bottom: 11px;
+                display: block;
+
+                i {
+                    color: #088cca;
+                }
+            }
+        }
+
+        .title {
+            p {
+                font-size: 20px;
+                font-weight: bold;
+                color: #404040;
+                padding-bottom: 4px;
+
+            }
+        }
+
+        .text {
+            width: 355px;
+            max-width: 100%;
+            padding-bottom: 34px;
+
+            p {
+                font-size: 15px;
+                font-weight: 300;
+                color: #8e8e8e;
+
+
+            }
+        }
+
+        .soc-med {
+            .youtube {
+                color: #0d3de5;
+            }
+
+            a {
+                font-size: 20px;
+                padding-right: 30px;
+                color: #a8bade;
+            }
+        }
+    }
+
+    .qlinks {
+        margin-top: 30px;
+
+        ul {
+
+            li {
+                text-decoration: none;
+                display: block;
+            }
+        }
+
+        .title {
+            p {
+
+                font-size: 23px;
+                font-weight: 500;
+                color: black;
+                padding-bottom: 20px;
+                margin-left: 30px;
+            }
+        }
+    }
+
+    .links {
+        a {
+            color: #7a7a7a;
+            padding-bottom: 15px;
+            display: block;
+        }
+    }
+
+    .support {
+        margin-top: 27px;
+
+        .title {
+            p {
+
+                font-size: 23px;
+                font-weight: 500;
+                color: black;
+                padding-bottom: 20px;
+                margin-left: 30px;
+            }
+        }
+
+    }
+
+    .fut-contact {
+        margin-top: 32px;
+
+        .title {
+            p {
+
+                font-size: 23px;
+                font-weight: 500;
+                color: black;
+                padding-bottom: 34px;
+
+            }
+        }
+
+        .location {
+
+            max-width: 100%;
+            padding-bottom: 20px;
+
+            a {
+                font-size: 17px;
+                font-weight: 500;
+                color: #5a5f63;
+                padding: 15px 25px 18px 47px;
+                background-color: #e8ecf8;
+                position: relative;
+                border-radius: 5px;
+
+                i {
+                    font-size: 30px;
+                    padding: 10px 13px 10px 13px;
+                    background-color: #0640e0;
+                    border-radius: 100%;
+                    top: 2px;
+                    position: absolute;
+                    left: -20px;
+                    color: #FFF;
+                }
+
+            }
+        }
+
+        .fut-phone {
+
+            margin-top: 24px;
+
+            a {
+                font-size: 17px;
+                font-weight: 500;
+                color: #5a5f63;
+                padding: 19px 25px 26px 47px;
+                background-color: #e8ecf8;
+                position: relative;
+                border-radius: 5px;
+
+                i {
+                    font-size: 25px;
+                    padding: 10px 13px 10px 13px;
+                    background-color: #0640e0;
+                    border-radius: 100%;
+                    top: 10px;
+                    position: absolute;
+                    left: -20px;
+                    color: #FFF;
+                }
+
+            }
+        }
+    }
+
+
+    .rights {
+        margin-top: 114px;
+        text-align: center;
+        padding-bottom: 55px;
+
+        a {
+            font-size: 15px;
+            font-weight: 200;
+            letter-spacing: 1px;
+            color: #818382;
+
+        }
+    }
+
+}
+
+@media only screen and (max-width: 1900px) and (min-width: 1500px) {
+    .about {
+        .col-lg-8 {
+            position: relative;
+        }
+
+
+        .about-text {
+            width: 600px;
+        }
+
+
+    }
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 1200px) {
+
+
+    .web-title {
+
+        i {
+            font-size: 25px;
+        }
+
+        span {
+            font-size: 25px;
+        }
+    }
+
+    .underline {
+        width: 55px;
+    }
+
+    .nav-item {
+        a {
+            font-size: 16px;
+            padding-right: 15px !important;
+        }
+
+
+    }
+
+    .phone-number {
+
+        i {
+            padding: 15px 15px 14px 18px;
+        }
+    }
+
+    .lagndropdown {
+        .select {
+
+            padding: 8px 1px 8px 20px;
+        }
+
+        .caret {
+
+            margin-right: 13px;
+        }
+
+        .langs {
+            list-style: none;
+            padding: 3px 3px;
+            background-color: rgba(228, 220, 220, 0.103);
+            color: #333534;
+            position: absolute;
+            top: 3em;
+            left: 50%;
+            width: 100%;
+            transform: translateX(-50%);
+            opacity: 0;
+            display: none;
+            transition: 0.2s;
+            z-index: 1;
+
+            li {
+                border-radius: 5px;
+                background-color: #0640e0;
+                color: #FFF;
+            }
+        }
+
+    }
+
+    .search {
+
+
+
+        .trending {
+            width: 590px !important;
+        }
+
+        .sub-title {
+            background-color: #f2f3f7;
+            width: 377px;
+            max-width: 100%;
+            padding: 15px 16px;
+            border-radius: 50px;
+
+            .trend {
+                font-size: 14px;
+            }
+
+            .trend-car {
+
+                font-size: 14px;
+            }
+        }
+
+        .title {
+            padding-top: 68px;
+
+            h1 {
+                font-size: 40px;
+                letter-spacing: 1px;
+            }
+
+        }
+
+        .text {
+            p {
+
+                font-size: 15px;
+
+            }
+        }
+
+        .search-eng {
+            .car-search {
+                display: inline-block;
+                width: 500px;
+                padding: 50px 0 55px 30px;
+                .carselect{
+                    margin: auto;
+                }
+                .classselect{
+                    margin: auto;
+                }
+                .modelselect{
+                    margin: auto;
+                }
+            }
+
+            .car-find {
+                padding: 56px 0 0 0px;
+                width: 250px;
+                margin-top: 20px;
+                .find {
+                    padding: 20px 10px 20px 30px;
+
+                    i {
+                        padding-left: 40px;
+                        font-size: 20px;
+                    }
+
+                }
+
+            }
+
+
+        }
+
+        .advanced {
+            margin-top: 192px;
+            padding: 0;
+            font-size: 16px;
+            padding-bottom: 67px;
+
+        }
+
+        .pop-brends {
+            p {
+                font-size: 15px;
+                font-weight: 400;
+                color: #8a8a8a;
+                padding-bottom: 4px;
+            }
+
+            .car-brands {
+                display: flex;
+
+                a {
+                    font-size: 16px;
+                    padding-left: 22px;
+                }
+
+
+            }
+        }
+
+        .carouselExampleCaptions {
+            position: absolute;
+
+        }
+
+        .carousel-control-prev-icon {
+            position: absolute;
+            left: 450px;
+        }
+
+        .carousel-control-next-icon {
+
+            right: 37px !important;
+            position: absolute;
+
+        }
+
+
+        .carousel-inner {
+            position: absolute;
+
+            .carousel-item {
+                position: relative;
+
+                .carousel-caption {
+                    position: relative;
+                    top: -870px;
+                    left: 70px;
+
+                    p {
+                        font-size: 15px;
+
+                    }
+
+                    h1 {
+                        font-size: 25px;
+
+                    }
+                }
+
+                img {
+                    width: 590px;
+
+                }
+
+            }
+
+            .carousel-price {
+                position: relative;
+                top: -970px;
+                right: 40px;
+
+                p {
+                    font-size: 15px;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    color: #fbfdfc;
+                }
+
+                h1 {
+                    font-size: 25px;
+
+                }
+            }
+
+            .carousel-dis {
+                position: relative;
+                top: -309px;
+                text-align: left;
+                left: 107px;
+
+                a {
+                    font-size: 15px;
+
+                }
+            }
+        }
+
+
+    }
+
+    .about {
+        img {
+            width: 660px;
+            height: 870px;
+        }
+
+        .sub-title {
+            margin-left: 280px;
+
+            p {
+                font-size: 15px;
+            }
+
+
+        }
+
+        .title {
+
+            margin-left: 280px;
+
+            h1 {
+                width: 400px;
+                font-size: 30px;
+            }
+        }
+
+        .about-text {
+            width: 500px;
+            margin-left: 280px;
+            padding-top: 28px;
+            padding-bottom: 44px;
+
+            P {
+                font-size: 15px;
+
+            }
+        }
+
+        .card {
+            width: 350px;
+            max-width: 100%;
+            border: none !important;
+            background-color: #e9eceb;
+            box-shadow: #6b6969;
+
+            i {
+                padding: 44px 0 30px 28px;
+                font-size: 27px;
+                color: #0d3de5;
+
+            }
+
+            .card-body {
+
+                h5 {
+                    font-size: 18px;
+
+                    padding: 0 0 10px 15px;
+                }
+
+                p {
+                    font-size: 15px;
+                    padding: 0 10px 40px 15px;
+                }
+            }
+        }
+    }
+
+    .future {
+
+        .col-md-5 {
+
+            a {
+                font-size: 18px;
+
+                padding: 15px 30px 20px 32px;
+            }
+
+            .sub-title {
+                p {
+                    font-size: 16px;
+
+                }
+
+            }
+
+            .title {
+
+                h1 {
+                    font-size: 30px;
+                }
+            }
+
+            .text {
+
+
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+
+        .col-md-6 {
+
+
+            .carousel-indicators {
+                position: absolute;
+
+                ul {
+
+                    li {
+                        left: 238px;
+
+                    }
+                }
+
+            }
+
+            .carousel-item {
+                width: 600px !important;
+
+
+                img {
+                    width: 600px !important;
+                }
+            }
+        }
+    }
+
+    .swiper-section {
+        margin-top: 235px;
+
+        .swiper-title {
+            display: grid;
+            place-items: center;
+
+            h1 {
+                font-size: 30px;
+                letter-spacing: 0px;
+                color: black;
+                padding-bottom: 20px;
+            }
+
+            p {
+                font-size: 18px;
+                color: black;
+                width: 540px;
+                text-align: center;
+                max-width: 100%;
+                padding-bottom: 20px;
+            }
+        }
+
+        .swiper {
+            margin-top: 30px;
+            width: 100%;
+            height: 100%;
+
+            .swiper-slide {
+                width: 410px !important;
+                height: 550px;
+
+
+            }
+        }
+    }
+
+    .serve {
+        i {
+            font-size: 45px;
+        }
+
+        margin-top: 237px;
+
+        .col-md-6 {
+            .carousel-indicators .active {
+                background-color: white !important;
+
+            }
+
+            .carousel-item {
+                width: 600px !important;
+
+
+                img {
+                    width: 600px !important;
+                }
+            }
+        }
+
+        .col-md-5 {
+            margin-top: 67px;
+
+            span {
+                font-size: 17px;
+
+            }
+
+            .sub-title {
+                p {
+                    font-size: 17px;
+                }
+
+            }
+
+            .title {
+                width: 400px;
+                max-width: 100%;
+
+                h1 {
+                    font-size: 28px;
+                }
+            }
+
+            .text {
+
+                p {
+                    font-size: 15px;
+
+                }
+            }
+        }
+    }
+
+    .question {
+        margin-top: 365px;
+
+
+        .col-md-6 {
+            .title {
+                h1 {
+                    font-size: 40px;
+                    font-weight: 500;
+                    color: #FFF;
+                    letter-spacing: 1px;
+                    padding: 80px 0 75px 104px;
+                }
+            }
+
+
+
+        }
+
+        .car {
+
+            position: relative;
+
+            .img {
+                width: 220px;
+                height: 200px;
+                max-width: 100%;
+                background-color: #db8047;
+                border-radius: 100%;
+                position: absolute;
+                bottom: -160px !important;
+                object-fit: cover;
+
+            }
+
+            img {
+
+                bottom: 60px;
+                width: 450px;
+                height: 550px;
+
+
+
+            }
+        }
+    }
+
+    .home-footer {
+
+
+        .col-sm-3 {
+
+            .mobhil {
+                a {
+                    font-size: 35px;
+                }
+            }
+
+
+
+
+
+        }
+
+        .qlinks {
+            margin-top: 10px;
+
+
+
+            .title {
+                p {
+
+                    font-size: 20px;
+
+                }
+            }
+        }
+
+
+
+        .support {
+            margin-top: 10px;
+
+            .title {
+                p {
+
+                    font-size: 20px;
+
+                }
+            }
+
+        }
+
+        .fut-contact {
+            margin-top: 6px;
+
+            .title {
+                p {
+
+                    font-size: 20px;
+
+
+                }
+            }
+
+            .location {
+
+                max-width: 100%;
+                padding-bottom: 20px;
+
+                a {
+                    font-size: 15px;
+                    padding: 10px 10px 13px 30px;
+
+
+                    i {
+                        font-size: 20px;
+                        padding: 8px 8px 8px 8px;
+                        left: -10px;
+
+                    }
+
+                }
+            }
+
+            .fut-phone {
+
+                margin-top: 24px;
+
+                a {
+                    padding: 14px 20px 20px 30px;
+                    background-color: #e8ecf8;
+
+                    i {
+                        font-size: 20px;
+                        padding: 8px 8px 8px 8px;
+                        left: -10px;
+
+                    }
+
+                }
+            }
+        }
+
+
+
+    }
+
+
+
+
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 991px) {
+
+    .nav-link {
+        background-color: #0d7ddf;
+        color: #FFF !important;
+        z-index: 999;
+    }
+
+    .underline {
+        display: none;
+
+    }
+
+    .nav-item {
+
+        a {
+            font-size: 15px;
+            padding-right: 5px !important;
+        }
+
+        .dropdown-menu {
+            background-color: #0d7ddf;
+
+            a {
+                color: #FFF !important;
+                z-index: 999;
+            }
+        }
+
+
+    }
+
+    .phone-number {
+        display: none;
+        z-index: 999;
+    }
+
+    .search {
+        .right {
+            display: none;
+        }
+
+        .trending {
+            margin-left: 50px;
+
+        }
+
+    }
+
+    .about {
+
+        img {
+            display: none;
+        }
+
+        .sub-title {
+            margin: 0;
+            position: relative;
+            right: 0;
+        }
+
+        .title {
+            margin: 0;
+            position: relative;
+            right: 0;
+        }
+
+        .about-text {
+            margin: 0;
+            position: relative;
+            right: 0;
+        }
+
+        .card {
+            margin: 0;
+            position: relative;
+            right: 0;
+            width: 300px !important;
+
+            i {
+                padding: 40px 0 50px 20px;
+            }
+
+
+            .card-body {
+
+                h5 {
+                    font-size: 20px;
+                    letter-spacing: 1px;
+                    color: black;
+                    font-weight: 700;
+                    padding: 0 0 10px 0;
+                }
+
+                p {
+                    font-size: 17px;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                    color: #6b6969;
+                    padding: 0 0 40px 0;
+                }
+            }
+        }
+    }
+
+    .future {
+        margin-top: 130px;
+
+
+        .col-md-5 {
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            .title {
+                margin-left: 250px;
+            }
+        }
+
+        .col-md-6 {
+            display: none;
+
+        }
+    }
+
+    .swiper-section {
+        margin-top: 235px;
+
+        .swiper-title {
+            display: grid;
+            place-items: center;
+
+            h1 {
+                font-size: 30px;
+                letter-spacing: 0px;
+                color: black;
+                padding-bottom: 20px;
+            }
+
+            p {
+                font-size: 18px;
+                color: black;
+                width: 540px;
+                text-align: center;
+                max-width: 100%;
+                padding-bottom: 20px;
+            }
+        }
+
+        .swiper {
+            margin-top: 30px;
+            width: 100%;
+            height: 100%;
+
+            .swiper-slide {
+                width: 410px !important;
+                height: 550px;
+
+
+            }
+        }
+    }
+
+    .serve {
+        i {
+            font-size: 60px;
+            color: #0640e0;
+        }
+
+        margin-top: 237px;
+
+        .col-md-6 {
+            display: none;
+        }
+
+
+        .col-md-5 {
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            .title {
+                margin-left: 300px;
+            }
+        }
+    }
+
+    .question {
+        margin-top: 265px;
+
+
+
+        .col-md-6 {
+            .title {
+                h1 {
+                    font-size: 40px;
+                    padding: 80px 0 75px 104px;
+                }
+            }
+
+            .contact-us {
+
+                .phone {
+                    margin-left: 50px;
+
+                    .number {
+                        color: #0640e0;
+                        font-size: 17px;
+                        padding: 16px 22px 21px 0;
+
+                        i {
+                            padding: 0 15px 0 0;
+                            font-size: 20px;
+                        }
+                    }
+                }
+
+
+
+            }
+
+        }
+
+        .car {
+            height: 420px;
+            position: relative;
+
+            .img {
+                width: 160px;
+                height: 140px;
+                bottom: -10px !important;
+            }
+
+            img {
+                position: absolute;
+                left: 60px;
+                bottom: 40px;
+                width: 415px;
+                height: 410px;
+                border-radius: 50px;
+                background-size: contain;
+                object-fit: cover;
+
+
+            }
+        }
+    }
+
+    .home-footer {
+
+
+        .col-sm-3 {
+
+            .mobhil {
+                a {
+                    i {
+                        display: none;
+                    }
+                }
+            }
+
+            .soc-med {
+                .linkedin {
+                    display: none;
+                }
+            }
+
+        }
+
+
+
+
+
+
+        .support {
+            margin-top: 30px;
+        }
+
+        .fut-contact {
+            margin-top: 30px;
+
+            .location {
+                a {
+                    font-size: 15px;
+                    padding: 0;
+                    background-color: transparent;
+
+
+                    i {
+                        display: none;
+
+                    }
+
+                }
+            }
+
+            .fut-phone {
+
+                margin-top: 24px;
+
+                a {
+                    background-color: transparent;
+                    padding: 0;
+
+                    i {
+                        display: none;
+
+                    }
+
+                }
+            }
+        }
+
+
+
+    }
+
+
+
+
+
+
+}
+
+@media only screen and (max-width: 991px) and (min-width: 680px) {
+    .nav-link {
+        background-color: #0d7ddf;
+        color: #FFF !important;
+        z-index: 999;
+    }
+
+    .underline {
+        display: none;
+
+    }
+
+    .nav-item {
+
+        a {
+            font-size: 15px;
+            padding-right: 5px !important;
+        }
+
+        .dropdown-menu {
+            background-color: #0d7ddf;
+
+            a {
+                color: #FFF !important;
+                z-index: 999;
+            }
+        }
+
+
+    }
+
+    .phone-number {
+        display: none;
+    }
+
+    .search {
+
+        .right {
+            display: none;
+        }
+
+
+        .trending {
+            width: 100%;
+            max-width: 100%;
+        }
+
+
+
+        .title {
+            padding-top: 68px;
+            padding-left: 16px;
+            width: 350px;
+            max-width: 100%;
+
+            h1 {
+                font-size: 25px;
+            }
+
+        }
+
+        .text {
+            width: 400px;
+            max-width: 100%;
+            padding-left: 16px;
+
+            p {
+
+                font-size: 15px;
+
+
+            }
+        }
+
+        .search-eng {
+            max-width: 100%;
+
+
+            .car-search {
+
+
+                padding: 50px 0 55px 16px;
+
+                a {
+                    i {
+                        padding-left: 8px;
+                        padding-right: 8px;
+                    }
+                }
+
+
+            }
+
+            .car-find {
+                padding: 56px 0 0 30px;
+                width: 250px;
+
+                .find {
+                    padding: 20px 10px 20px 30px;
+
+                    i {
+                        padding-left: 40px;
+                        font-size: 20px;
+                    }
+
+                }
+
+            }
+
+
+        }
+
+        .advanced {
+            margin-top: 50px;
+            padding-left: 16px;
+
+
+        }
+
+        .pop-brends {
+            padding-left: 16px;
+
+            p {
+                font-size: 15px;
+                font-weight: 400;
+                color: #8a8a8a;
+                padding-bottom: 4px;
+            }
+
+            .car-brands {
+                display: flex;
+
+                a {
+                    font-size: 16px;
+                    padding-left: 22px;
+                }
+
+
+            }
+        }
+
+    }
+
+    .about {
+        margin-top: 150px;
+        padding: 0;
+
+        img {
+            display: none;
+        }
+
+        .sub-title {
+            padding: 15px;
+            margin: 0;
+
+            p {
+                margin: 0;
+            }
+
+        }
+
+        .title {
+            margin: 0;
+            padding-left: 8px;
+
+            h1 {
+                margin: 0;
+                font-size: 25px;
+
+            }
+        }
+
+        .about-text {
+            margin: 0;
+            padding-left: 16px;
+
+            p {
+                margin: 0;
+                font-size: 14px;
+            }
+        }
+
+        .card {
+            margin: 0;
+            position: relative;
+            right: 0;
+            width: 100%;
+
+            i {
+                padding: 0;
+                align-items: center;
+                text-align: center;
+                padding-bottom: 10px;
+            }
+
+
+            .card-body {
+
+                h5 {
+                    font-size: 20px;
+                    letter-spacing: 1px;
+                    color: black;
+                    font-weight: 700;
+                    padding: 0 0 10px 0;
+                    align-items: center;
+                    text-align: center;
+                }
+
+                p {
+                    font-size: 17px;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                    color: #6b6969;
+                    padding: 0 0 40px 0;
+                    align-items: center;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .future {
+        margin-top: 150px;
+
+        .col-md-5 { 
+            width: 600px;
+
+            a {
+                font-size: 18px;
+
+                padding: 15px 30px 20px 32px;
+            }
+
+            .sub-title {
+                p {
+                    font-size: 16px;
+
+                }
+
+            }
+
+            .title {
+
+                h1 {
+                    font-size: 25px;
+                }
+            }
+
+            .text {
+
+                   max-width: 100%;
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+
+        .col-md-6 {
+
+
+            display: none;
+        }
+    }
+
+    .swiper-section {
+        margin-top: 150px;
+
+        .swiper-title {
+            display: grid;
+            place-items: center;
+
+            h1 {
+                font-size: 25px;
+
+            }
+
+            p {
+                font-size: 15px;
+
+                width: 540px;
+                text-align: center;
+                max-width: 100%;
+                padding-bottom: 20px;
+            }
+        }
+
+        .swiper {
+            margin-top: 30px;
+            width: 100%;
+            height: 100%;
+
+            .swiper-slide {
+                width: 310px !important;
+                height: 350px;
+
+                .card {
+                    position: relative;
+
+                    .title {
+                        position: absolute;
+                        bottom: 420px;
+                        left: 20px;
+
+                        h4 {
+                            font-size: 20px;
+                        }
+                    }
+
+                    .price {
+                        position: absolute;
+                        left: 20px;
+                        bottom: 300px;
+
+                        a {
+                            background-color: #0d3de5;
+                            color: #FFF;
+                            padding: 8px 27px 9px 25px;
+                            border-radius: 30px;
+                            font-size: 15px;
+                            font-weight: bold;
+
+                        }
+                    }
+
+                    .min-des {
+                        position: absolute;
+                        left: 20px;
+                        bottom: 155px;
+
+                        .gear {
+                            p {
+
+                                padding-right: 2px;
+                            }
+
+                            h6 {
+                                font-size: 16px;
+                                font-weight: 500;
+                                color: white;
+                                padding-right: 2px;
+                            }
+
+                        }
+
+                        .fuel {
+                            p {
+                                font-size: 15px;
+                                font-weight: bold;
+                                color: #cbcbcb;
+                                padding-right: 2px;
+                            }
+
+                            h6 {
+                                font-size: 18px;
+                                font-weight: 500;
+                                color: white;
+                                padding-right: 2px;
+                                padding-left: 10px;
+                            }
+                        }
+
+                        .sits {
+                            p {
+                                font-size: 15px;
+                                font-weight: bold;
+                                color: #cbcbcb;
+                                padding-right: 32px;
+                                padding-left: 10px;
+                            }
+
+                            h6 {
+                                font-size: 18px;
+                                font-weight: 500;
+                                color: white;
+                                padding-right: 32px;
+                                padding-left: 20px;
+                            }
+                        }
+                    }
+                }
+
+
+            }
+        }
+    }
+
+    .serve {
+        i {
+            font-size: 60px;
+            color: #0640e0;
+            margin-left: 16px;
+        }
+
+        margin-top: 237px;
+
+        .col-md-6 {
+            display: none;
+        }
+
+
+        .down {
+            width: 100%;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+
+            .title {
+                margin-left: 16px;
+
+            }
+
+            .sub-title {
+                margin-left: 16px;
+            }
+
+            .text {
+                margin-left: 16px;
+            }
+        }
+    }
+
+    .question {
+        margin-top: 165px;
+
+        .col-md-6 {
+            width: 100%;
+
+            .title {
+                h1 {
+                    font-size: 30px;
+                    padding: 10px 0 10px 100px;
+                }
+            }
+
+            .contact-us {
+
+                .phone {
+                    margin-left: 50px;
+                    padding: 16px 10px 21px 50px;
+
+                    .number {
+                        color: #0640e0;
+                        font-size: 17px;
+
+                        i {
+                            padding: 0 15px 10px 0;
+                            font-size: 20px;
+                        }
+                    }
+                }
+
+                .contact {
+                    padding: 16px 22px 21px 0;
+                }
+
+
+
+            }
+
+        }
+
+        .car {
+            display: none;
+        }
+    }
+
+    .home-footer {
+        margin-top: 150px;
+
+        .col-sm-3 {
+
+            .mobhil {
+                a {
+                    i {
+                        display: none;
+                    }
+                }
+            }
+
+            .soc-med {
+                .linkedin {
+                    display: none;
+                }
+            }
+
+        }
+
+
+
+
+
+
+        .support {
+            margin-top: 30px;
+        }
+
+        .fut-contact {
+            margin-top: 30px;
+
+            .location {
+                a {
+                    font-size: 15px;
+                    padding: 0;
+                    background-color: transparent;
+
+
+                    i {
+                        display: none;
+
+                    }
+
+                }
+            }
+
+            .fut-phone {
+
+                margin-top: 24px;
+
+                a {
+                    background-color: transparent;
+                    padding: 0;
+
+                    i {
+                        display: none;
+
+                    }
+
+                }
+            }
+        }
+
+
+
+    }
+
+
+
+
+}
+@media only screen and (max-width: 680px) and (min-width: 415px) {
+
+    .nav-link {
+        background-color: #0d7ddf;
+        color: #FFF !important;
+        z-index: 999;
+        overflow: hidden;
+
+    }
+
+    .underline {
+        display: none;
+
+    }
+
+    .nav-item {
+
+        a {
+            font-size: 15px;
+            padding-right: 5px !important;
+        }
+
+        .dropdown-menu {
+            background-color: #0d7ddf;
+
+            a {
+                color: #FFF !important;
+                z-index: 999;
+            }
+        }
+
+
+    }
+
+    .phone-number {
+        display: none;
+    }
+
+    .search {
+
+        .right {
+            display: none;
+        }
+
+
+        .trending {
+            width: 100%;
+            max-width: 100%;
+
+            .sub-title {
+                a {
+                    font-size: 13px;
+                }
+            }
+        }
+
+
+
+        .title {
+            padding-top: 68px;
+            padding-left: 16px;
+            width: 350px;
+            max-width: 100%;
+
+            h1 {
+                font-size: 25px;
+            }
+
+        }
+
+        .text {
+            width: 400px;
+            max-width: 100%;
+            padding-left: 16px;
+
+            p {
+
+                font-size: 15px;
+
+
+            }
+        }
+
+        .search-eng {
+            display: inline-block;
+            max-width: 100%;
+            padding: 0 !important;
+            height: 200px;
+
+            .car-search {
+                display: inline-block;
+                padding: 0;
+
+               
+
+
+            }
+
+            .car-find {
+                padding: 0;
+                display: flex;
+                justify-content: space-around;
+                margin-top: 20px;
+
+
+                .find {
+                    padding: 15px 5px 15px 25px;
+
+                    i {
+                        padding-left: 40px;
+                        font-size: 20px;
+                    }
+
+                }
+
+            }
+
+
+        }
+
+        .advanced {
+            margin-top: 10px;
+            padding-left: 16px;
+
+
+        }
+
+        .pop-brends {
+            padding-left: 16px;
+
+            p {
+                font-size: 15px;
+                font-weight: 400;
+                color: #8a8a8a;
+                padding-bottom: 4px;
+            }
+
+            .car-brands {
+                display: flex;
+
+                a {
+                    font-size: 16px;
+                    padding-left: 22px;
+                }
+
+
+            }
+        }
+
+    }
+
+    .about {
+        margin-top: 150px;
+        padding: 0;
+        width: 100%;
+
+        img {
+            display: none;
+        }
+
+        .sub-title {
+            padding: 15px;
+            margin: 0;
+
+            p {
+                margin: 0;
+            }
+
+        }
+
+        .title {
+            margin: 0;
+            padding-left: 8px;
+            width: 350px;
+
+            h1 {
+                width: 350px;
+                margin: 0;
+                font-size: 25px;
+
+            }
+        }
+
+        .about-text {
+            margin: 0;
+            padding-left: 16px;
+
+            p {
+                margin: 0;
+                font-size: 14px;
+            }
+        }
+
+        .card {
+            margin: 0;
+            position: relative;
+            right: 0;
+            width: 100%;
+
+            i {
+                padding: 0;
+                align-items: center;
+                text-align: center;
+                padding-bottom: 10px;
+            }
+
+
+            .card-body {
+
+                h5 {
+                    font-size: 20px;
+                    letter-spacing: 1px;
+                    color: black;
+                    font-weight: 700;
+                    padding: 0 0 10px 0;
+                    align-items: center;
+                    text-align: center;
+                }
+
+                p {
+                    font-size: 17px;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                    color: #6b6969;
+                    padding: 0 0 40px 0;
+                    align-items: center;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .future {
+        margin-top: 150px;
+
+        .col-md-5 {
+            width: 100%;
+
+            a {
+                font-size: 18px;
+
+                padding: 15px 30px 20px 32px;
+            }
+
+            .sub-title {
+                width: 350px;
+                max-width: 100%;
+
+                p {
+                    width: 350px;
+                    max-width: 100%;
+                    font-size: 16px;
+
+                }
+
+            }
+
+            .title {
+                width: 350px;
+                max-width: 100%;
+
+                h1 {
+                    font-size: 25px;
+                    width: 350px;
+                    max-width: 100%;
+                }
+            }
+
+            .text {
+                width: 350px;
+                max-width: 100%;
+
+
+                p {
+                    width: 350px;
+                    max-width: 100%;
+                    font-size: 15px;
+                }
+            }
+        }
+
+        .col-md-6 {
+
+
+            display: none;
+        }
+    }
+
+    .swiper-section {
+        display: none;
+    }
+
+    .serve {
+        width: 100%;
+
+        i {
+            font-size: 45px;
+            color: #0640e0;
+            margin-left: 16px;
+        }
+
+        margin-top: 237px;
+
+        .col-md-6 {
+            display: none;
+        }
+
+
+        .down {
+            width: 100%;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+
+            .title {
+                margin-left: 16px;
+                width: 350px;
+                max-width: 100%;
+
+                h1 {
+                    font-size: 25px;
+                    letter-spacing: 0px;
+                }
+
+            }
+
+            .sub-title {
+                margin-left: 16px;
+                width: 350px;
+                max-width: 100%;
+
+                p {
+                    width: 350px;
+                    max-width: 100%;
+                    font-size: 15px;
+                    letter-spacing: 0px;
+                }
+            }
+
+            .text {
+                width: 350px;
+                max-width: 100%;
+                margin-left: 16px;
+
+                p {
+                    width: 350px;
+                    max-width: 100%;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    .question {
+        margin-top: 165px;
+
+        .col-md-6 {
+            width: 100%;
+
+            .title {
+                margin: 0;
+
+                h1 {
+                    margin: 0;
+                    font-size: 22px;
+                    padding: 30px 0 40px 0;
+
+                }
+            }
+
+            .contact-us {
+                padding-bottom: 50px;
+
+                .phone {
+                    margin-left: 0;
+                    padding: 0;
+                    width: 100%;
+
+                    .number {
+                        color: #0640e0;
+                        font-size: 15px;
+                        margin-left: 0;
+
+                        i {
+                            padding: 0 0 0 10px;
+                            font-size: 20px;
+                        }
+                    }
+                }
+
+                .contact {
+                    margin: 0;
+                    width: 100%;
+                    padding: 0;
+
+                    a {
+                        padding: 16px 22px 21px 10px;
+                    }
+                }
+
+
+
+            }
+
+        }
+
+        .car {
+            display: none;
+        }
+    }
+
+    .home-footer {
+        margin-top: 150px;
+
+        display: block;
+
+        .fut-mobhil {
+            margin-left: 40px;
+        }
+
+        .support {
+            margin-top: 30px;
+        }
+
+        .fut-contact {
+            margin-top: 30px;
+            margin-left: 40px;
+
+            .location {
+                a {
+                    font-size: 15px;
+                    padding: 15px 15px 15px 15px;
+                    background-color: #0640e0;
+                    color: #FFF;
+
+
+                    i {
+                        display: none;
+
+                    }
+
+                }
+            }
+
+            .fut-phone {
+
+                margin-top: 24px;
+
+                a {
+                    padding: 15px 15px 15px 15px;
+                    background-color: #0640e0;
+                    color: #FFF;
+
+                    i {
+                        display: none;
+
+                    }
+
+                }
+            }
+        }
+    }
+
+}
+@media only screen and (max-width:415px) {
+    .nav-link {
+        background-color: #0d7ddf;
+        color: #FFF !important;
+        z-index: 999;
+        overflow: hidden;
+
+    }
+
+    .underline {
+        display: none;
+
+    }
+
+    .nav-item {
+
+        a {
+            font-size: 15px;
+            padding-right: 5px !important;
+        }
+
+        .dropdown-menu {
+            background-color: #0d7ddf;
+
+            a {
+                color: #FFF !important;
+                z-index: 999;
+            }
+        }
+
+
+    }
+
+    .phone-number {
+        display: none;
+    }
+
+    .search {
+        
+
+        .right {
+            display: none;
+        }
+
+
+        .trending {
+            width: 100%;
+            max-width: 100%;
+
+            .sub-title {
+                a {
+                    font-size: 13px;
+                }
+            }
+        }
+
+        
+
+
+        .title {
+            padding-top: 68px;
+            padding-left: 16px;
+            width: 350px;
+            max-width: 100%;
+
+            h1 {
+                font-size: 25px;
+            }
+
+        }
+
+        .text {
+            width: 400px;
+            max-width: 100%;
+            padding-left: 16px;
+
+            p {
+
+                font-size: 15px;
+
+
+            }
+        }
+
+        .search-eng {
+            max-width: 100%;
+            padding: 0 !important;
+            display: block;
+
+            .carselect{
+                width: 100px;
+                padding: 5px 5px;
+                margin: auto;
+                .show{
+                    display: block;
+                }
+                
+                .carchoose{
+                    font-size: 15px;
+                    color: black;
+                    cursor: pointer;
+                    padding: 5px 6px;
+                    border-right: 2px solid gray;
+                    i{
+                        display: none;
+                    }
+                }
+            }
+
+            .classselect{
+                width: 100px;
+                padding: 5px 5px;
+                margin: auto;
+                .show{
+                    display: block;
+                }
+                .classchoose{
+                    font-size: 15px;
+                    color: black;
+                    cursor: pointer;
+                    padding: 5px 6px;
+                    border-right: 2px solid gray;
+                    i{
+                        display: none;
+                    }
+                }
+            }
+
+            .modelselect{
+                width: 100px;
+                padding: 5px 5px;
+                margin: auto;
+                .show{
+                    display: block;
+                }
+               
+                .modelchoose{
+                    font-size: 15px;
+                    color: black;
+                    cursor: pointer;
+                    padding: 5px 6px;
+                    border-right: 2px solid gray;
+                    i{
+                        display: none;
+                    }
+                }
+            }
+
+            .car-find {
+                margin-left: 110px;
+                margin-top: 30px;
+                padding: 0;
+                .find {
+                    padding: 15px 5px 15px 25px;
+
+                    i {
+                        padding-left: 40px;
+                        font-size: 20px;
+                    }
+
+                }
+
+            }
+
+
+        }
+
+        .advanced {
+            padding: -20px 0px 0px 0px;
+            margin-top: 200px;
+            padding-left: 16px;
+            height: 20px;
+            width: 100%;
+            
+
+
+        }
+
+        .pop-brends {
+            padding-left: 16px;
+
+            p {
+                font-size: 15px;
+                font-weight: 400;
+                color: #8a8a8a;
+                padding-bottom: 4px;
+            }
+
+            .car-brands {
+                display: flex;
+
+                a {
+                    font-size: 16px;
+                    padding-left: 22px;
+                }
+
+
+            }
+            .more{
+                display: none;
+            }
+        }
+
+    }
+
+    .about {
+        margin-top: 150px;
+        padding: 0;
+        width: 100%;
+
+        img {
+            display: none;
+        }
+
+        .sub-title {
+            padding: 15px;
+            margin: 0;
+
+            p {
+                margin: 0;
+            }
+
+        }
+
+        .title {
+            margin: 0;
+            padding-left: 8px;
+            width: 350px;
+
+            h1 {
+                width: 350px;
+                margin: 0;
+                font-size: 25px;
+
+            }
+        }
+
+        .about-text {
+            margin: 0;
+            padding-left: 16px;
+
+            p {
+                margin: 0;
+                font-size: 14px;
+            }
+        }
+
+        .card {
+            margin: 0;
+            position: relative;
+            right: 0;
+            width: 100%;
+
+            i {
+                padding: 0;
+                align-items: center;
+                text-align: center;
+                padding-bottom: 10px;
+            }
+
+
+            .card-body {
+
+                h5 {
+                    font-size: 20px;
+                    letter-spacing: 1px;
+                    color: black;
+                    font-weight: 700;
+                    padding: 0 0 10px 0;
+                    align-items: center;
+                    text-align: center;
+                }
+
+                p {
+                    font-size: 17px;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                    color: #6b6969;
+                    padding: 0 0 40px 0;
+                    align-items: center;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .future {
+        margin-top: 150px;
+
+        .col-md-5 {
+            width: 100%;
+
+            a {
+                font-size: 18px;
+
+                padding: 15px 30px 20px 32px;
+            }
+
+            .sub-title {
+                width: 350px;
+                max-width: 100%;
+
+                p {
+                    width: 350px;
+                    max-width: 100%;
+                    font-size: 16px;
+
+                }
+
+            }
+
+            .title {
+                width: 350px;
+                max-width: 100%;
+
+                h1 {
+                    font-size: 25px;
+                    width: 350px;
+                    max-width: 100%;
+                }
+            }
+
+            .text {
+                width: 350px;
+                max-width: 100%;
+
+
+                p {
+                    width: 350px;
+                    max-width: 100%;
+                    font-size: 15px;
+                }
+            }
+        }
+
+        .col-md-6 {
+
+
+            display: none;
+        }
+    }
+
+    .swiper-section {
+        display: none;
+    }
+
+    .serve {
+        width: 100%;
+
+        i {
+            font-size: 45px;
+            color: #0640e0;
+            margin-left: 16px;
+        }
+
+        margin-top: 237px;
+
+        .col-md-6 {
+            display: none;
+        }
+
+
+        .down {
+            width: 100%;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+
+            .title {
+                margin-left: 16px;
+                width: 350px;
+                max-width: 100%;
+
+                h1 {
+                    font-size: 25px;
+                    letter-spacing: 0px;
+                }
+
+            }
+
+            .sub-title {
+                margin-left: 16px;
+                width: 350px;
+                max-width: 100%;
+
+                p {
+                    width: 350px;
+                    max-width: 100%;
+                    font-size: 15px;
+                    letter-spacing: 0px;
+                }
+            }
+
+            .text {
+                width: 350px;
+                max-width: 100%;
+                margin-left: 16px;
+
+                p {
+                    width: 350px;
+                    max-width: 100%;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    .question {
+        margin-top: 165px;
+        display: none;
+
+        .col-md-6 {
+            width: 100%;
+
+            .title {
+                margin: 0;
+
+                h1 {
+                    margin: 0;
+                    font-size: 22px;
+                    padding: 30px 0 40px 0;
+
+                }
+            }
+
+            .contact-us {
+                padding-bottom: 50px;
+
+                .phone {
+                    margin-left: 0;
+                    padding: 0;
+                    width: 100%;
+
+                    .number {
+                        color: #0640e0;
+                        font-size: 15px;
+                        margin-left: 0;
+
+                        i {
+                            padding: 0 0 0 10px;
+                            font-size: 20px;
+                        }
+                    }
+                }
+
+                .contact {
+                    margin: 0;
+                    width: 100%;
+                    padding: 0;
+
+                    a {
+                        padding: 16px 22px 21px 10px;
+                    }
+                }
+
+
+
+            }
+
+        }
+
+        .car {
+            display: none;
+        }
+    }
+
+    .home-footer {
+        margin-top: 150px;
+
+
+        .fut-mobhil {
+            margin-left: 20px;
+            .text{
+                width: 300px;
+            }
+        }
+
+        .support {
+            margin-top: 30px;
+        }
+
+        .fut-contact {
+            margin-top: 30px;
+            margin-left: 20px;
+
+            .location {
+                width: 100%;
+                a {
+                    font-size: 15px;
+                    padding: 15px 15px 15px 15px;
+                    background-color: #0640e0;
+                    color: #FFF;
+
+
+                    i {
+                        display: none;
+
+                    }
+
+                }
+            }
+
+            .fut-phone {
+
+                margin-top: 24px;
+
+                a {
+                    padding: 15px 15px 15px 15px;
+                    background-color: #0640e0;
+                    color: #FFF;
+
+                    i {
+                        display: none;
+
+                    }
+
+                }
+            }
+        }
+    }
+}

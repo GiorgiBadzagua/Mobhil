@@ -1,0 +1,802 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Mobhil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+
+
+    <!-- ნავის დასაწყისი  -->
+    <nav class="navbar navbar-expand-lg my-color">
+        <div class="container">
+            <div class="web-title">
+                <a href=""><i class="fa-solid fa-car"></i> <span>Mobhil</span> </a>
+
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto ">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SERVICES</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            CAR COLECTION
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">LUXURY CARS</a></li>
+                            <li><a class="dropdown-item" href="#">HYPER CARS</a></li>
+                            <li><a class="dropdown-item" href="#">MUSCLE CARS</a></li>
+                            <li><a class="dropdown-item" href="#">SPORT CARS</a></li>
+
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">LOCATION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                </ul>
+                <div class="phone-number">
+                    <a href=""> <i class="fa-solid fa-phone-volume"> <span>224 000 22 11 33</span> </i></a>
+                </div>
+                <div class="lagndropdown">
+                    <div class="select">
+                        <span class="selected">ENG</span>
+                        <div class="caret"></div>
+                    </div>
+                    <ul class="langs">
+                        <li href="#">GEO</li>
+                        <li href="#">GER</li>
+                        <li href="#">JAP</li>
+                        <li class="active"> ENG</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <span class="underline"></span>
+    </nav>
+
+    <!-- ნავ ბარის დასასრული -->
+
+    <!-- ად სეარჩის დასაწყისი -->
+
+    <header class="search">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="trending">
+                        <div class="sub-title">
+                            <a class="trend" href="">TRENDING</a>
+                            <a class="trend-car" href="">2020 FORD MUSTANG</a>
+                        </div>
+
+                        <div class="title">
+                            <h1>Say helo to best car dealer platform</h1>
+                        </div>
+
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Modi aperiam veniam corrupti officiis voluptas pariatur
+                                voluptatibus provident repellat animi. </p>
+                        </div>
+
+                        <div class="search-eng">
+                            <div class="car-search d-flex">
+                                <div class="carselect">
+                                    <form class="caroption">
+                                       <input type="hidden" name="carid" value="">
+                                       <h3 class="carchoose mb-0"> <span>PORSCHE</span><i class="fa-solid fa-chevron-down"></i></h3>
+                                       <ul>
+                                           <li data-carid="1">FORD</li>
+                                           <li data-carid="2">DODGE</li>
+                                           <li data-carid="3">AUDI</li>
+                                           <li data-carid="4">CHEVROLET</li>
+                                           <li data-carid="5">NISSAN </li>
+                                           <li data-carid="6">PORSCHE</li>
+                                       </ul>
+                                    </form>
+                                </div>
+
+                                <div class="classselect">
+                                    <form class="classoption">
+                                       <input type="hidden" name="classid" value="">
+                                       <h3 class="classchoose mb-0"> <span>SPORT</span><i class="fa-solid fa-chevron-down"></i></h3>
+                                       <ul>
+                                           <li data-classid="1">MUSCLE</li>
+                                           <li data-classid="2">HYPER</li>
+                                           <li data-classid="3">SUV</li>
+                                           <li data-classid="4">LOW RIDER</li>
+                                           <li data-classid="5">LUXURY </li>
+                                           <li data-classid="6">SPORT</li>
+                                       </ul>
+                                    </form>
+                                </div>
+
+                                <div class="modelselect">
+                                    <form class="modeloption">
+                                       <input type="hidden" name="modelid" value="">
+                                       <h3 class="modelchoose mb-0"> <span>911</span><i class="fa-solid fa-chevron-down"></i></h3>
+                                       <ul>
+                                           <li data-modelid="1">MUSTANG</li>
+                                           <li data-modelid="2">DEMON</li>
+                                           <li data-modelid="3">R8</li>
+                                           <li data-modelid="4">IMPALA</li>
+                                           <li data-modelid="5">R-35 </li>
+                                           <li data-modelid="6">911</li>
+                                       </ul>
+                                    </form>
+                                </div>
+
+
+
+
+
+
+
+                            </div>
+                            <div class="car-find">
+                                <a class="find" href="">FIND <i class="fa-sharp fa-solid fa-arrow-right-long"></i></a>
+                            </div>
+
+                        </div>
+
+                        <a class="advanced" href="">Try adcanced search <i
+                                class="fa-sharp fa-solid fa-arrow-right-long"></i></a>
+
+                        <div class="pop-brends">
+                            <p class="pop-title">Popular Brands</p>
+
+                            <div class="car-brands">
+                                <a href="">HONDO</a>
+                                <a href="">FORD</a>
+                                <a href="">TOYOTO</a>
+                                <a href="">PORCE</a>
+                                <div class="more">
+                                    <a class="more-cars" href="">24+ more </a>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 right">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="pictures/porsche.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <p>SPORT CAR</p>
+                                    <h1>Porce 123 GT</h1>
+                                </div>
+                                <div class="carousel-price">
+                                    <p>Starting at</p>
+                                    <h1>$ 20,500</h1>
+                                </div>
+                                <div class="carousel-dis">
+                                    <a href="">DISCOVER MORE</a>
+                                </div>
+
+                            </div>
+                            <div class="carousel-item">
+                                <img src="pictures/chevrolet.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <p>MUSCLE CAR</p>
+                                    <h1>CHEVROLET IMPALA</h1>
+                                </div>
+                                <div class="carousel-price">
+                                    <p>Starting at</p>
+                                    <h1>$ 30,500</h1>
+                                </div>
+                                <div class="carousel-dis">
+                                    <a href="">DISCOVER MORE</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="pictures/bugati2.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <p>HYPER CAR</p>
+                                    <h1>BUGATI DIVO</h1>
+                                </div>
+                                <div class="carousel-price">
+                                    <p>Starting at</p>
+                                    <h1>$ 7 900 000</h1>
+                                </div>
+                                <div class="carousel-dis">
+                                    <a href="">DISCOVER MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <a class="carousel-control-prev-icon" href=""></a>
+
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <a class="carousel-control-next-icon" href=""></a>
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </header>
+
+    <!-- სეარჩის დასასრული  -->
+
+    <!-- about ის დასაწყისი -->
+
+    <section class="about">
+        <img src="pictures/old mustang.2.jpg" alt="">
+        <div class="container">
+            <div class="col-lg-8 ms-auto">
+
+                <div class="sub-title">
+                    <p>ABOUT</p>
+                </div>
+
+                <div class="title">
+                    <h1>About the Mobhil</h1>
+                </div>
+
+                <div class="about-text">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, ipsam! Quod repellat saepe
+                        quo iure
+                        necessitatibus! Aperiam enim perferendis vel architecto, quasi alias neque magnam harum numquam
+                        voluptates,
+                        autem magni.
+
+                    </p>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <a href="about.html">
+                            <div class="card">
+                                <i class="fa-solid fa-star"></i>
+                                <div class="card-body">
+                                    <h5 class="card-title">EXCLUSIVE</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="col">
+                        <a href="about.html">
+                            <div class="card">
+                                <i class="fa-solid fa-shapes"></i>
+                                <div class="card-body">
+                                    <h5 class="card-title">UPDATE</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="col">
+                        <a href="about.html">
+                            <div class="card">
+                                <i class="fa-solid fa-shield-halved"></i>
+                                <div class="card-body">
+                                    <h5 class="card-title">SECURE</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- about ის დასასრული -->
+
+
+    <!-- futere ის დასაწყისი -->
+
+    <section class="future">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-md-5">
+                    <div class="sub-title">
+                        <p>We Bring You To The Future</p>
+                    </div>
+                    <div class="title">
+                        <h1>Dont't worries, we check all of unit</h1>
+                    </div>
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            A architecto suscipit cum ab expedita quam perferendis aut officia,
+                            molestias iure aperiam amet tempore,
+                            magnam incidunt? Eligendi unde quae nesciunt nihil.
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Amet dignissimos mollitia quia magni, corporis explicabo,
+                            ad necessitatibus natus repudiandae soluta laborum distinctio
+                            facere aliquam sapiente iusto!
+                            Quidem maxime odio fugiat.
+                        </p>
+                    </div>
+
+
+                    <a href="">Discover More</a>
+
+                </div>
+                <div class="col-md-6 ms-auto">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                            <ul>
+                                <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></li>
+                                <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></li>
+                                <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></li>
+                                <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></li>
+                            </ul>
+
+
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="pictures/old porsche.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="pictures/old-mustang.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="pictures/old charger.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="pictures/shelby.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <!-- futere ის დასასრული -->
+
+    <!-- swiper start -->
+
+    <section class="swiper-section">
+        <div class="container">
+            <div class="swiper-title">
+                <h1>Top deals of the week</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Cupiditate cumque autem voluptas similique eaque sequi
+                    quos.</p>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="pictures/bmwelec.jpg" alt="">
+                            <div class="sub-title">
+                                <p>SPORT CAR</p>
+                            </div>
+                            <div class="title">
+                                <h4>BMW</h4>
+                            </div>
+                            <div class="price"><a href=""> $ 34,500</a></div>
+                            <div class="min-des d-flex">
+                                <div class="gear">
+                                    <p>Transmition</p>
+                                    <h6>Automatic</h6>
+                                </div>
+                                <div class="fuel">
+                                    <p>Fuel</p>
+                                    <h6>Electric</h6>
+                                </div>
+                                <div class="sits">
+                                    <p>Passenger</p>
+                                    <h6>2 Person</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="pictures/aston.jpg" alt="">
+                            <div class="sub-title">
+                                <p>SPORT CAR</p>
+                            </div>
+                            <div class="title">
+                                <h4>ASTON MARTIN</h4>
+                            </div>
+                            <div class="price"><a href=""> $ 34,500</a></div>
+                            <div class="min-des d-flex">
+                                <div class="gear">
+                                    <p>Transmition</p>
+                                    <h6>Automatic</h6>
+                                </div>
+                                <div class="fuel">
+                                    <p>Fuel</p>
+                                    <h6>Electric</h6>
+                                </div>
+                                <div class="sits">
+                                    <p>Passenger</p>
+                                    <h6>2 Person</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="pictures/bmw2.jpg" alt="">
+                            <div class="sub-title">
+                                <p>SPORT CAR</p>
+                            </div>
+                            <div class="title">
+                                <h4>BMW</h4>
+                            </div>
+                            <div class="price"><a href=""> $ 34,500</a></div>
+                            <div class="min-des d-flex">
+                                <div class="gear">
+                                    <p>Transmition</p>
+                                    <h6>Automatic</h6>
+                                </div>
+                                <div class="fuel">
+                                    <p>Fuel</p>
+                                    <h6>Electric</h6>
+                                </div>
+                                <div class="sits">
+                                    <p>Passenger</p>
+                                    <h6>2 Person</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="pictures/audi.jpg" alt="">
+                            <div class="sub-title">
+                                <p>SPORT CAR</p>
+                            </div>
+                            <div class="title">
+                                <h4>AUDI</h4>
+                            </div>
+                            <div class="price"><a href=""> $ 34,500</a></div>
+                            <div class="min-des d-flex">
+                                <div class="gear">
+                                    <p>Transmition</p>
+                                    <h6>Automatic</h6>
+                                </div>
+                                <div class="fuel">
+                                    <p>Fuel</p>
+                                    <h6>Electric</h6>
+                                </div>
+                                <div class="sits">
+                                    <p>Passenger</p>
+                                    <h6>2 Person</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="pictures/r35.jpg" alt="">
+                            <div class="sub-title">
+                                <p>SPORT CAR</p>
+                            </div>
+                            <div class="title">
+                                <h4>NISSAN</h4>
+                            </div>
+                            <div class="price"><a href=""> $ 34,500</a></div>
+                            <div class="min-des d-flex">
+                                <div class="gear">
+                                    <p>Transmition</p>
+                                    <h6>Automatic</h6>
+                                </div>
+                                <div class="fuel">
+                                    <p>Fuel</p>
+                                    <h6>Electric</h6>
+                                </div>
+                                <div class="sits">
+                                    <p>Passenger</p>
+                                    <h6>2 Person</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="pictures/card-mustang.jpg" alt="">
+                            <div class="sub-title">
+                                <p>MUSCLE CAR</p>
+                            </div>
+                            <div class="title">
+                                <h4>FORD</h4>
+                            </div>
+                            <div class="price"><a href=""> $ 34,500</a></div>
+                            <div class="min-des d-flex">
+                                <div class="gear">
+                                    <p>Transmition</p>
+                                    <h6>Automatic</h6>
+                                </div>
+                                <div class="fuel">
+                                    <p>Fuel</p>
+                                    <h6>Electric</h6>
+                                </div>
+                                <div class="sits">
+                                    <p>Passenger</p>
+                                    <h6>2 Person</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- swiper end -->
+
+    <!-- serve start -->
+    <section class="serve">
+        <div class="container">
+            <div class="row d-flex">
+
+                <div class="col-md-6">
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="pictures/pony.jpg" class="d-block w-100" alt="...">
+
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="pictures/bird.jpg" class="d-block w-100" alt="...">
+
+                            </div>
+                            <div class="carousel-item">
+                                <img src="pictures/pony3.jpg" class="d-block w-100" alt="...">
+
+                            </div>
+                            <div class="carousel-item">
+                                <img src="pictures/chevroletflip.jpg" class="d-block w-100" alt="...">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-5 ms-auto down">
+                    <div class="sub-title">
+                        <p>Best car in the World</p>
+                    </div>
+                    <div class="title">
+                        <h1>We serve you with best car in the world</h1>
+                    </div>
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            A architecto suscipit cum ab expedita quam perferendis aut officia,
+                            molestias iure aperiam amet tempore,
+                            magnam incidunt? Eligendi unde quae nesciunt nihil.
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Amet dignissimos mollitia quia magni, corporis explicabo,
+                            ad necessitatibus natus repudiandae soluta laborum distinctio
+                            facere aliquam sapiente iusto!
+                            Quidem maxime odio fugiat.
+                        </p>
+                    </div>
+
+
+                    <a href=""><i class="fa-solid fa-circle-play"></i><span> Learn more</span></a>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- serve end -->
+
+    <!-- quetsion start -->
+    <section class="question">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-md-6">
+                    <div class="title">
+                        <h1>Have any question about us ?</h1>
+                    </div>
+                    <div class="contact-us d-flex">
+                        <div class="phone">
+                            <a href="" class="number"><i class="fa-solid fa-phone"></i> 224 000 22 11 33</a>
+                        </div>
+                        <div class="contact">
+                            <a href="">Contact Us</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 car">
+                    <div class="img">
+                        <img src="pictures/chevrolet3.jpg" alt="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- question end -->
+
+    <footer class="home-footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-3 fut-mobhil ">
+                    <div class="mobhil">
+                        <a href=""><i class="fa-solid fa-car"></i> <span>Mobhil</span> </a>
+                    </div>
+                    <div class="title">
+                        <p>Best car dealer in europe</p>
+                    </div>
+                    <div class="text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Eveniet odit laudantium aperiam alias eaque quo voluptatum sint deserunt,
+                        ipsa natus assumenda quos velit atque enim ea minima nostrum tempore non?
+                    </div>
+                    <div class="soc-med">
+                        <a class="youtube active" href=""><i class="fa-brands fa-youtube"></i></a>
+                        <a class="linkedin" href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a class="twitter" href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a class="facebook" href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a class="instagram" href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 qlinks  ">
+                    <div class="title">
+                        <p>Quick Links</p>
+                    </div>
+                    <ul class="links">
+                        <li><a href="about.html"> About us</a></li>
+                        <li><a href="">Contact us</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">Login</a></li>
+                        <li><a href="">Sign Up</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-sm-3 support ms-auto ">
+                    <div class="title">
+                        <p>Support</p>
+                    </div>
+                    <div class="links">
+                        <ul>
+                            <li><a href="">Affiliates</a></li>
+                            <li><a href="">Sitemap</a></li>
+                            <li><a href="">Cancelation POlicy</a></li>
+                            <li><a href="">privacy Policy</a></li>
+                            <li><a href="">Legal Disclamer</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+                <div class="col-sm-3 fut-contact d-block">
+                    <div class="title">
+                        <p>Contact</p>
+                    </div>
+                    <div class="location">
+                        <a href=""><i class="fa-solid fa-building"></i> 77 Higfield Road London N36 7SB </a>
+                    </div>
+                    <div class="fut-phone">
+                        <a href=""><i class="fa-solid fa-phone"></i> 414 444 1124</a>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="rights ms-auto ">
+                <a href=""> Mobhil - © 2020 All Rights Reserved</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script src="drop.js" > </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        let swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            centeredSlides: true,
+            spaceBetween: 30,
+            grabCursor: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+
+</html>
